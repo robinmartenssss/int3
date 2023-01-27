@@ -1,3 +1,11 @@
+.hidden__mobile {
+  display: none;
+}
+
+.container__flex {
+  display: flex;
+}
+
 h1 {
   font-family: "DIN Condensed";
   font-style: normal;
@@ -13,6 +21,34 @@ h1 {
   position: relative;
   height: 844px;
   background-image: url("../public/assets/img_mobile/backgroundimage1_mobile.jpg");
+}
+
+.container__adolphesax,
+.container__saxophone,
+.container__accidents,
+.container__storyline__part1,
+.container__quotes,
+.container__downfall__jazzrock,
+.container__johnson__texts,
+.container__pinkfloyd {
+  position: relative;
+  height: 844px;
+  background-image: url("../public/assets/img_mobile/backgroundimage2_mobile.jpg");
+}
+
+.container__johnson__texts,
+.container__pinkfloyd {
+  height: 204px;
+}
+
+.container__downfall__jazzrock {
+  height: 604px;
+}
+
+.container__platehoezen {
+  position: relative;
+  height: 1152px;
+  background-image: url("../public/assets/img_mobile/backgroundimage2_mobile.jpg");
 }
 
 .header__container__title {
@@ -34,4 +70,363 @@ h1 {
 .saxophone {
   position: absolute;
   top: 25%;
+}
+
+.container__adolphesax__text {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 120%;
+
+  margin: auto;
+  top: 7.5%;
+  position: absolute;
+  /* or 24px */
+
+  text-align: center;
+  letter-spacing: -0.011em;
+
+  color: #f1dec4;
+}
+
+.container__adolphesax__text-small {
+  font-weight: 300;
+}
+
+.span__color-orange {
+  color: #e74c14;
+}
+
+.container__adolphesax__adolphe {
+  position: absolute;
+  top: 37.5%;
+}
+
+.container__adolphesax__titel {
+  font-family: "Jonze & Jonzing";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9.4rem;
+  line-height: 7.5rem;
+  color: transparent;
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: #f1dec4;
+  text-align: right;
+  position: absolute;
+  top: 60%;
+  left: -10%;
+  /* identical to box height, or 67% */
+}
+
+.container__title-downfall {
+  font-family: "Jonze & Jonzing";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5rem;
+  color: transparent;
+  -webkit-text-stroke-width: 0.15rem;
+  -webkit-text-stroke-color: #f1dec4;
+}
+
+.saxophone__detail {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.container__saxophone-details p {
+  font-family: "DIN Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.saxophone__detail-textone,
+.saxophone__detail-texttwo,
+.saxophone__detail-textthree,
+.saxophone__detail-textfour,
+.saxophone__detail-textfive {
+  position: absolute;
+}
+
+.saxophone__detail-textone {
+  top: 35%;
+  left: 5%;
+}
+
+.saxophone__detail-texttwo {
+  top: 19%;
+  left: 46%;
+}
+
+.saxophone__detail-textthree {
+  top: 47.5%;
+  left: 23%;
+}
+
+.saxophone__detail-textfour {
+  top: 39.5%;
+  left: 72.5%;
+}
+
+.saxophone__detail-textfive {
+  top: 60%;
+  left: 80%;
+}
+
+.container__accidents__text {
+  position: absolute;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 150%;
+
+  /* or 30px */
+
+  text-align: center;
+  letter-spacing: -0.011em;
+
+  color: #ffffff;
+}
+
+.container__accidents__title {
+  position: absolute;
+
+  font-family: "Jonze & Jonzing";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  text-align: center;
+  width: 100%;
+  /* identical to box height */
+
+  color: #f1dec4;
+
+  top: 40%;
+}
+
+.container__tears img {
+  margin: 120% 2rem;
+}
+
+.container__storyline__part1-title {
+  position: absolute;
+  top: 15%;
+
+  font-family: "Jonze & Jonzing";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 150%;
+  /* identical to box height, or 75px */
+
+  text-align: center;
+  width: 100%;
+
+  /* orange_main */
+
+  color: #e74c14;
+}
+
+.container__storyline__part1-text,
+.container__storyline__part1-texttwo {
+  position: absolute;
+
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+
+  text-align: center;
+  letter-spacing: -0.011em;
+
+  color: #ffffff;
+}
+
+.container__storyline__part1-text {
+  top: 30%;
+}
+.container__storyline__part1-texttwo {
+  top: 52%;
+  z-index: 1;
+}
+
+.storyline__duosax {
+  position: absolute;
+}
+
+.storyline__images {
+  top: 45%;
+  position: absolute;
+}
+
+.container__cds-cd {
+  position: absolute;
+}
+
+.cds__two {
+  top: 25%;
+  right: 0%;
+}
+
+.cds__one {
+  top: 30%;
+}
+
+.container__quotes__text {
+  position: absolute;
+  top: 7.5%;
+
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  left: 10%;
+  /* or 30px */
+
+  color: #ffffff;
+}
+
+.cd__titleone {
+  top: 22.5%;
+  left: 20%;
+  -webkit-text-stroke-width: 0.2rem;
+  -webkit-text-stroke-color: #e74c14;
+  font-size: 6rem;
+}
+
+.cd__titletwo {
+  top: 55%;
+  left: 30%;
+  -webkit-text-stroke-width: 0.2rem;
+  -webkit-text-stroke-color: #ebd633;
+  font-size: 6rem;
+}
+
+.container__johnson__texts__text {
+  color: white;
+  position: absolute;
+  top: 5%;
+
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+
+  text-align: center;
+}
+
+.rock__mobile {
+  position: absolute;
+  right: 0%;
+}
+
+.container__downfall__jazzrock-text {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 150%;
+  /* or 24px */
+
+  text-align: right;
+  letter-spacing: -0.011em;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.jazzrock_text-jazz {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  width: 70%;
+  z-index: 1;
+}
+
+.jazzrock_text-rock {
+  position: absolute;
+  text-align: left;
+  top: 70%;
+  left: 10%;
+  width: 70%;
+  z-index: 1;
+}
+.container__pinkfloyd__text {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 150%;
+  /* or 30px */
+
+  text-align: center;
+  letter-spacing: -0.011em;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.container__pinkfloyd__backgroundimage-title {
+  position: absolute;
+  font-family: "Jonze & Jonzing";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6.5rem;
+  line-height: 150%;
+
+  color: transparent;
+  -webkit-text-stroke-width: 0.15rem;
+  -webkit-text-stroke-color: #f1dec4;
+
+  z-index: 1;
+}
+
+.pinkfloyd__image-mobile {
+  position: absolute;
+  top: 45%;
+}
+
+.container__platehoezen__text {
+  position: absolute;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+
+  text-align: center;
+  letter-spacing: -0.011em;
+
+  /* orange_main */
+
+  color: #000000;
+}
+
+.container__platehoezen-background {
+  position: absolute;
+}
+
+.platehoezen__textone {
+  width: 90%;
+  left: 5%;
+  top: 8.5%;
+}
+
+.platehoezen__texttwo {
+  top: 87.5%;
+  width: 90%;
+  left: 5%;
 }
