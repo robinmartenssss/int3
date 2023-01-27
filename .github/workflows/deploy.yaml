@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  WEB_PATH: ~/www/Int3
+  WEB_PATH: ~/www/int3
 jobs:
   ftp-deploy:
     runs-on: ubuntu-latest
