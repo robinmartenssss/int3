@@ -1,0 +1,37 @@
+h1 {
+  font-family: "DIN Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5rem;
+  text-align: right;
+  line-height: 3rem;
+
+  color: #f1dec4;
+}
+
+.header__container {
+  position: relative;
+  height: 844px;
+  background-image: url("../public/assets/img_mobile/backgroundimage1_mobile.jpg");
+}
+
+.header__container__title {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+
+.header__container__title-orange {
+  font-family: "Jonze & Jonzing";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  text-align: right;
+
+  color: #e74c14;
+}
+
+.saxophone {
+  position: absolute;
+  top: 25%;
+}

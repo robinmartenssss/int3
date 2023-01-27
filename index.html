@@ -13,12 +13,22 @@
       <nav>
         <!--- nav if needed-->
       </nav>
-      <h1 class="header__container__title">Saxophone <span>fatigue</span></h1>
-      <img
-        class="header__container__image"
-        src="assets/img/saxophone_header"
-        alt="saxophone"
-      />
+      <h1 class="header__container__title">
+        Saxophone <br />
+        <span class="header__container__title-orange">fatigue</span>
+      </h1>
+
+      <picture class="saxophone">
+        <source
+          media="(max-width: 390px)"
+          srcset="public/assets/img_mobile/saxophone_image_mobile.png"
+        />
+        <source
+          media="(max-width: 1440px)"
+          srcset="assets/img/saxophone_image.png"
+        />
+        <img src="public/assets/img/saxophone_image.png" alt="saxophone" />
+      </picture>
     </div>
 
     <div class="container__adolphesax">
@@ -485,6 +495,6 @@
       </div>
     </div>
 
-    <script src="js/index.js" type="module"></script>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>
