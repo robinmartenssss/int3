@@ -44,7 +44,7 @@ p {
   color: white;
   text-align: center;
 }
-
+/*
 .header__container {
   position: relative;
   height: 844px;
@@ -98,12 +98,10 @@ p {
   height: 1052px;
   background-image: url("../public/assets/img_mobile/background__song__mobile.png");
   margin-top: -10%;
-}
+}*/
 
 .header__container__title {
-  position: absolute;
-  top: 20%;
-  left: 35%;
+  margin: 10rem 5rem 0rem 0rem;
 }
 
 .header__container__title-orange {
@@ -117,8 +115,8 @@ p {
 }
 
 .saxophone {
-  position: absolute;
-  top: 25%;
+  margin: -2rem auto;
+  margin-bottom: 4rem;
 }
 
 .container__adolphesax__text {
@@ -129,8 +127,7 @@ p {
   line-height: 120%;
 
   margin: auto;
-  top: 7.5%;
-  position: absolute;
+
   /* or 24px */
 
   text-align: center;
@@ -148,8 +145,6 @@ p {
 }
 
 .container__adolphesax__adolphe {
-  position: absolute;
-  top: 37.5%;
 }
 
 .container__adolphesax__titel {
@@ -164,9 +159,8 @@ p {
   -webkit-text-stroke-color: #f1dec4;
 
   text-align: right;
-  position: absolute;
-  top: 60%;
-  left: -10%;
+  margin-top: -9.5rem;
+
   /* identical to box height, or 67% */
 }
 
@@ -175,15 +169,20 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 5rem;
+
+  margin: 5rem 0rem 5rem 0rem;
   color: transparent;
   -webkit-text-stroke-width: 0.15rem;
   -webkit-text-stroke-color: #f1dec4;
 }
 
 .saxophone__detail {
-  position: absolute;
-  top: 20%;
-  left: 10%;
+  text-align: center;
+  margin-top: 18rem;
+}
+
+.container__saxophone {
+  position: relative;
 }
 
 .container__saxophone-details p {
@@ -197,6 +196,10 @@ p {
   color: #ffffff;
 }
 
+.container__saxophone-details {
+  text-align: center;
+}
+
 .saxophone__detail-textone,
 .saxophone__detail-texttwo,
 .saxophone__detail-textthree,
@@ -206,36 +209,35 @@ p {
 }
 
 .saxophone__detail-textone {
-  top: 35%;
+  top: 52.5%;
   left: 5%;
 }
 
 .saxophone__detail-texttwo {
-  top: 19%;
+  top: 36%;
   left: 46%;
 }
 
 .saxophone__detail-textthree {
-  top: 47.5%;
+  top: 67.5%;
   left: 23%;
 }
 
 .saxophone__detail-textfour {
-  top: 39.5%;
+  top: 57.5%;
   left: 72.5%;
 }
 
 .saxophone__detail-textfive {
-  top: 60%;
+  top: 80.5%;
   left: 80%;
 }
 
 .container__accidents__text {
-  position: absolute;
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 150%;
 
   /* or 30px */
@@ -244,11 +246,12 @@ p {
   letter-spacing: -0.011em;
 
   color: #ffffff;
+  margin: auto;
+  margin-top: 12rem;
+  width: 90%;
 }
 
 .container__accidents__title {
-  position: absolute;
-
   font-family: "Jonze & Jonzing";
   font-style: normal;
   font-weight: 400;
@@ -258,18 +261,14 @@ p {
   /* identical to box height */
 
   color: #f1dec4;
-
-  top: 40%;
+  margin-top: 4rem;
 }
 
 .container__tears img {
-  margin: 120% 2rem;
+  margin: auto;
 }
 
 .container__storyline__part1-title {
-  position: absolute;
-  top: 15%;
-
   font-family: "Jonze & Jonzing";
   font-style: normal;
   font-weight: 400;
@@ -287,8 +286,6 @@ p {
 
 .container__storyline__part1-text,
 .container__storyline__part1-texttwo {
-  position: absolute;
-
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
@@ -300,42 +297,43 @@ p {
   letter-spacing: -0.011em;
 
   color: #ffffff;
+  width: 90%;
+  margin: 2rem auto;
+  z-index: 1;
 }
 
 .container__storyline__part1-text {
-  top: 30%;
 }
 .container__storyline__part1-texttwo {
-  top: 52%;
   z-index: 1;
 }
 
 .storyline__duosax {
-  position: absolute;
+  margin-top: 10rem;
 }
 
 .storyline__images {
-  top: 45%;
-  position: absolute;
+  margin-top: -8rem;
+  z-index: -1;
 }
 
+.container__cds {
+  position: relative;
+}
 .container__cds-cd {
   position: absolute;
 }
 
 .cds__two {
-  top: 25%;
-  right: 0%;
+  top: 4%;
+  right: 0;
 }
 
 .cds__one {
-  top: 30%;
+  margin-top: 2.5rem;
 }
 
 .container__quotes__text {
-  position: absolute;
-  top: 7.5%;
-
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
@@ -351,25 +349,33 @@ p {
 }
 
 .cd__titleone {
-  top: 22.5%;
-  left: 20%;
+  position: absolute;
+  margin-top: -2rem;
+  margin-left: 5rem;
+
   -webkit-text-stroke-width: 0.2rem;
   -webkit-text-stroke-color: #e74c14;
   font-size: 6rem;
 }
 
 .cd__titletwo {
-  top: 55%;
-  left: 30%;
+  position: absolute;
   -webkit-text-stroke-width: 0.2rem;
   -webkit-text-stroke-color: #ebd633;
-  font-size: 6rem;
+  font-size: 5.25rem;
+
+  margin-top: 15rem;
+  margin-left: 10rem;
+  top: 10%;
+  z-index: -1;
+}
+
+.container__quotes-charlie {
+  margin-bottom: 5rem;
 }
 
 .container__johnson__texts__text {
   color: white;
-  position: absolute;
-  top: 5%;
 
   font-family: "IBM Plex Sans";
   font-style: normal;
@@ -378,11 +384,13 @@ p {
   line-height: 150%;
 
   text-align: center;
+  margin-top: 25rem;
 }
 
 .rock__mobile {
   position: absolute;
-  right: 0%;
+  right: 0;
+  z-index: -1;
 }
 
 .container__downfall__jazzrock-text {
@@ -397,24 +405,20 @@ p {
   letter-spacing: -0.011em;
 
   color: rgba(255, 255, 255, 0.8);
+  width: 70%;
 }
 
 .jazzrock_text-jazz {
-  position: absolute;
-  top: 30%;
-  right: 10%;
-  width: 70%;
+  margin: 5rem 0rem 0rem -5rem;
   z-index: 1;
 }
 
 .jazzrock_text-rock {
-  position: absolute;
   text-align: left;
-  top: 70%;
-  left: 10%;
-  width: 70%;
-  z-index: 1;
+  margin-top: 8rem;
+  margin-left: 2.5rem;
 }
+
 .container__pinkfloyd__text {
   font-family: "IBM Plex Sans";
   font-style: normal;
@@ -425,12 +429,12 @@ p {
 
   text-align: center;
   letter-spacing: -0.011em;
+  margin: 10rem 0rem 0rem 0rem;
 
   color: rgba(255, 255, 255, 0.8);
 }
 
 .container__pinkfloyd__backgroundimage-title {
-  position: absolute;
   font-family: "Jonze & Jonzing";
   font-style: normal;
   font-weight: 400;
@@ -444,13 +448,17 @@ p {
   z-index: 1;
 }
 
+.container__pinkfloyd {
+  position: relative;
+}
+
 .pinkfloyd__image-mobile {
   position: absolute;
-  top: 45%;
+  top: 40%;
+  z-index: -1;
 }
 
 .container__platehoezen__text {
-  position: absolute;
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
@@ -466,32 +474,38 @@ p {
   color: #000000;
 }
 
-.container__platehoezen-background {
-  position: absolute;
+.container__platehoezen {
+  z-index: -1;
 }
 
 .platehoezen__textone {
-  width: 90%;
-  left: 5%;
-  top: 8.5%;
+  background-color: red;
 }
 
 .platehoezen__texttwo {
-  top: 87.5%;
+  margin-top: -66.5rem;
+}
+
+.platehoezen__textthree {
+  margin-top: 52.5rem;
+  margin-bottom: 5rem;
+}
+
+.container__platehoezen__texts {
   width: 90%;
-  left: 5%;
+  margin: auto;
 }
 
 .container__kennyg__text {
-  position: absolute;
-  top: 45%;
-
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 150%;
   text-align: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 5rem;
 
   /* or 30px */
 
@@ -505,25 +519,42 @@ p {
   font-size: 8.4rem;
   line-height: 164px;
   text-align: center;
+
   /* identical to box height, or 109% */
 
   color: #f1dec4;
 }
 
+.container__pop__backgroundimage {
+  text-align: center;
+  margin: auto;
+}
+
+.container__sounds__rock {
+  margin: auto;
+  width: 90%;
+}
+
 .container__pop__backgroundimage__text {
-  position: absolute;
-  top: 37.5%;
+  margin: -10rem 0rem 5rem 0rem;
+}
+
+.container__sounds__image {
+  margin-top: -3.4rem;
 }
 
 .container__sounds__text {
-  position: absolute;
-  top: 15%;
+  margin-top: -57.5rem;
+  margin-bottom: 22.5rem;
   color: black;
+  width: 100%;
+  text-align: center;
 }
 
 .container__lopez__backgroundimage__text {
-  position: absolute;
-  top: 70%;
+  margin-top: 27.5rem;
+  width: 80%;
+  margin: auto;
   color: black;
 }
 
@@ -541,18 +572,18 @@ p {
 
 .image__song__one {
   z-index: -1;
-  top: -5%;
+  margin-top: -2rem;
 }
 
 .image__song__two {
-  top: 20%;
-  right: 0;
   z-index: -1;
+  right: 0;
+  margin-top: -32.5rem;
 }
 
 .image__song__three {
-  top: 80%;
   z-index: -1;
+  left: 0;
 }
 
 .songs__title__mobile {
@@ -564,8 +595,19 @@ p {
   margin-top: 15%;
   color: #f1dec4;
 }
-.container__newsongss__texts__text {
-  width: 85%;
-  margin: 15% auto;
-  margin-bottom: 5%;
+
+.container__newsongss__texts {
+  width: 75%;
+  margin: auto;
+  padding-top: 7.5rem;
+}
+
+.container__newsongss__texts__arianda {
+  width: 75%;
+  margin: auto;
+}
+
+.container__newsongss__texts__title {
+  font-size: 5rem;
+  margin-bottom: 4rem;
 }

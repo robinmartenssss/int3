@@ -18,7 +18,7 @@
         <span class="header__container__title-orange">fatigue</span>
       </h1>
 
-      <picture class="saxophone">
+      <picture>
         <source
           media="(max-width: 390px)"
           srcset="public/assets/img_mobile/saxophone_image_mobile.png"
@@ -27,7 +27,11 @@
           media="(max-width: 1440px)"
           srcset="assets/img/saxophone_image.png"
         />
-        <img src="public/assets/img/saxophone_image.png" alt="saxophone" />
+        <img
+          class="saxophone"
+          src="public/assets/img/saxophone_image.png"
+          alt="saxophone"
+        />
       </picture>
     </div>
 
@@ -71,8 +75,6 @@
       </div>
 
       <div class="container__adolphesax__adolphe">
-        <h2 class="container__adolphesax__titel">sax <br />adolphe</h2>
-
         <picture class="adolphesax">
           <source
             media="(max-width: 390px)"
@@ -84,6 +86,8 @@
             alt="adolphe sax"
           />
         </picture>
+
+        <h2 class="container__adolphesax__titel">sax <br />adolphe</h2>
       </div>
     </div>
 
@@ -93,7 +97,7 @@
       </h1>
 
       <div class="container__saxophone-details">
-        <picture class="saxophone__detail">
+        <picture>
           <source
             media="(max-width: 390px)"
             srcset="public/assets/img_mobile/saxophone_uitleg_mobile.png"
@@ -103,6 +107,7 @@
             srcset="public/assets/img_mobile/saxophone_uitleg.png"
           />
           <img
+            class="saxophone__detail"
             src="public/assets/img_mobile/saxophone_uitleg_mobile.png"
             alt="saxophone"
           />
@@ -126,8 +131,6 @@
 
       <img class="hidden__mobile" src="assets/img/example-third" alt="toxic" />
 
-      <h2 class="container__accidents__title">accidents</h2>
-
       <p class="container__accidents__text">
         Sax faced many brushes with death. As a child, he once fell from
         <span class="span__color-orange">a height of three floors</span>, hit
@@ -135,6 +138,19 @@
         <span class="span__color-orange">a bowl full of acidic water</span>,
         mistaking it for milk, and later swallowed a pin.
       </p>
+
+      <h2 class="container__accidents__title">accidents</h2>
+
+      <div class="container__tears container__flex">
+        <img
+          src="public/assets/img_mobile/paper_tear_mobile.png"
+          alt="papertear"
+        />
+        <img
+          src="public/assets/img_mobile/paper_tear_mobile.png"
+          alt="papertear"
+        />
+      </div>
 
       <p class="container__accidents__text hidden__mobile">
         He received serious burns from
@@ -152,17 +168,6 @@
           struck on the head by cobblestone
         </p>
         <img src="assets/img/accident_two" alt="accidentfoto" />
-      </div>
-
-      <div class="container__tears container__flex">
-        <img
-          src="public/assets/img_mobile/paper_tear_mobile.png"
-          alt="papertear"
-        />
-        <img
-          src="public/assets/img_mobile/paper_tear_mobile.png"
-          alt="papertear"
-        />
       </div>
     </div>
 
@@ -334,6 +339,12 @@
       </div>
 
       <div class="container__downfall__jazzrock-parttwo container__flex">
+        <p class="container__downfall__jazzrock-text jazzrock_text-rock">
+          “Going forward from the <span class="span__color-orange"> ’60s</span>,
+          the saxophone was on
+          <span class="span__color-orange"> a decline</span>”
+        </p>
+
         <picture class="rock__mobile">
           <source
             media="(max-width: 390px)"
@@ -345,11 +356,6 @@
             alt="jazz speler"
           />
         </picture>
-        <p class="container__downfall__jazzrock-text jazzrock_text-rock">
-          “Going forward from the <span class="span__color-orange"> ’60s</span>,
-          the saxophone was on
-          <span class="span__color-orange"> a decline</span>”
-        </p>
       </div>
     </div>
 
@@ -407,23 +413,30 @@
         src="public/assets/img_mobile/plattehoezen__background.png"
         alt=""
       />
-      <p class="container__platehoezen__text platehoezen__textone">
-        <span class="span__color-orange">That shift</span> toward electronic
-        production and away from acoustic as exemplified by the fast rise of
-        disco in the ’70s <span class="span__color-orange">was notable</span>.
-      </p>
 
-      <p class="container__platehoezen__text platehoezen__texttwo">
-        <span class="hidden__mobile">
+      <div class="container__platehoezen__texts">
+        <p
+          class="container__platehoezen__text platehoezen__textone hidden__mobile"
+        >
+          <span class="span__color-orange">That shift</span> toward electronic
+          production and away from acoustic as exemplified by the fast rise of
+          disco in the ’70s <span class="span__color-orange">was notable</span>.
+        </p>
+
+        <p class="container__platehoezen__text platehoezen__texttwo">
           The saxophone thrived in jazz fusion with guys like
           <span class="span__color-orange"
             >Grover Washington Jr., Tom Scott, David Sanborn,</span
           >
-          and <span class="span__color-orange">Michael Brecker</span>. </span
-        >But as the genre became gentrified, there was a definite move away from
-        saxophone sections and horn sections, to the
-        <span class="span__color-orange">sexy saxophone solo.</span>
-      </p>
+          and <span class="span__color-orange">Michael Brecker. </span>
+        </p>
+
+        <p class="container__platehoezen__text platehoezen__textthree">
+          But as the genre became gentrified, there was a definite move away
+          from saxophone sections and horn sections, to the
+          <span class="span__color-orange">sexy saxophone solo.</span>
+        </p>
+      </div>
     </div>
 
     <div class="container__kennyg">
@@ -487,6 +500,12 @@
     </div>
 
     <div class="container__pop__backgroundimage">
+      <img
+        class="image__pop"
+        src="public/assets/img_mobile/tear__mobile.png"
+        alt=""
+      />
+
       <p class="container__pop__backgroundimage__text">
         “We start to see this shift toward the emphasis on
         <span class="span__color-whiteish span__color-orange"
@@ -527,12 +546,18 @@
     </div>
 
     <div class="container__sounds hidden__desktop">
-      <div>
+      <img
+        class="container__sounds__image"
+        src="public/assets/img_mobile/background__song__mobile.png"
+        alt=""
+      />
+      <div class="container__sounds__rock">
         <p class="container__sounds__text">
           Big name ’80s pop stars started using the saxophone to create hooks
           that were <span class="span__color-orange">catchy</span>, but
           <span class="span__color-orange">inescapable</span> and incredibly
-          annoying. And that use took it from being
+          annoying.<br /><br />
+          And that use took it from being
           <span class="span__color-orange">a cool instrument</span> with a
           strong sound, to being
           <span class="span__color-orange">a weird, almost tacky gimmick.</span>
@@ -608,8 +633,8 @@
         alt="lady gaga"
       />
 
-      <div class="container__newsongss__texts">
-        <p class="container__newsongss__texts__text hidden__mobile">
+      <div class="container__newsongss__texts hidden__mobile">
+        <p class="container__newsongss__texts__text">
           (Kenny G even made a cameo in the video for “T.G.I.F.”) By 2014, it
           seemed like the saxophone was maybe easing into another run as
           America’s most popular instrument. That year, it was used in
@@ -626,7 +651,7 @@
         </div>
       </div>
 
-      <div class="container__newsongss__texts">
+      <div class="container__newsongss__texts__arianda">
         <img
           class="container__newsongss__image image__song__three"
           src="public/assets/img_mobile/song3_mobile.png"
