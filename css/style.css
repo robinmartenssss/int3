@@ -101,7 +101,7 @@ p {
 }*/
 
 .header__container__title {
-  margin: 10rem 5rem 0rem 0rem;
+  padding: 10rem 5rem 0rem 0rem;
 }
 
 .header__container__title-orange {
@@ -142,9 +142,6 @@ p {
 
 .span__color-orange {
   color: #e74c14;
-}
-
-.container__adolphesax__adolphe {
 }
 
 .container__adolphesax__titel {
@@ -610,4 +607,559 @@ p {
 .container__newsongss__texts__title {
   font-size: 5rem;
   margin-bottom: 4rem;
+}
+
+/* START DESKTOP */
+
+@media (min-width: 391px) {
+  body {
+    background-image: url("../public/assets/img/background__main.png");
+    max-width: 100%;
+
+    height: 100vh;
+  }
+
+  .hidden__desktop {
+    display: none;
+  }
+
+  .background_image1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .hidden__mobile {
+    display: block;
+  }
+
+  .header__container__title {
+    position: absolute;
+    top: 8%;
+    left: 44%;
+    text-align: left;
+    font-size: 6rem;
+    line-height: 5.25rem;
+  }
+
+  .header__container__title-orange {
+    font-size: 5.5rem;
+    text-align: right;
+
+    color: #e74c14;
+  }
+
+  .saxophone__desktop {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+  }
+
+  .adolphesax {
+    margin-bottom: -8.25rem;
+  }
+
+  .container__adolphesax__titel {
+    font-size: 4rem;
+    color: #e74c14;
+
+    -webkit-text-stroke-width: 0rem;
+
+    transform: rotate(90deg);
+
+    margin: 1rem 0rem 0rem 17rem;
+
+    /* identical to box height, or 67% */
+  }
+
+  .container__adolphesax__titel-secondary {
+    font-family: "DIN Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 150%;
+    /* identical to box height, or 90px */
+
+    margin: -3rem 0rem 0rem 37.5rem;
+
+    letter-spacing: -0.011em;
+
+    color: #f1dec4;
+  }
+
+  .container__adolphesax__text {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    text-align: left;
+    width: 40%;
+    /* or 42px */
+
+    letter-spacing: -0.011em;
+  }
+
+  .container__adolphesax {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .background_image2 {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container__adolphesax__grid {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 0.75fr) repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    top: 0%;
+  }
+  .container__adolphe__gridone {
+    display: flex;
+    grid-area: 1 / 1 / 3 / 5;
+  }
+  .container__adolphe__gridtwo {
+    grid-area: 3 / 1 / 5 / 4;
+  }
+  .container__adolphe__gridthree {
+    grid-area: 3 / 4 / 5 / 5;
+
+    position: absolute;
+
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .container__adolphesax__instruments {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.75fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    margin: 0rem 0rem 0rem 30rem;
+    width: 80%;
+  }
+
+  .container__adolphesax__instruments {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .container__adolphesax__instruments-second {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-top: 2rem;
+  }
+
+  .container__adolphesax__instruments-third {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .instrument__text {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    /* or 42px */
+
+    color: #f1dec4;
+  }
+
+  .instrumenttextone {
+    margin: -4rem 0rem 4rem 0rem;
+  }
+
+  .instrumenttexttwo {
+    display: flex;
+  }
+
+  .instrumenttextthree {
+    margin: -8rem 0rem 0rem 0rem;
+  }
+
+  .container__saxophone {
+    position: relative;
+    height: 100vh;
+  }
+
+  .container__saxophone__title {
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    text-align: left;
+
+    font-family: "Jonze & Jonzing";
+    line-height: 2.75rem;
+    font-size: 5rem;
+    font-weight: 400;
+  }
+
+  .container__saxophone-details {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+  }
+
+  .container__saxophone-details p {
+    font-size: 2rem;
+  }
+
+  .saxophone__detail {
+    margin: 0rem;
+  }
+
+  .saxophone__detail-subtitle {
+    color: #e74c14;
+    font-family: "DIN Condensed";
+  }
+
+  .saxophone__detail-textone {
+    top: 23.5%;
+    left: -17%;
+  }
+
+  .saxophone__detail-texttwo {
+    top: 8%;
+    left: 43%;
+  }
+
+  .saxophone__detail-textthree {
+    top: 62.5%;
+    left: 30%;
+  }
+
+  .saxophone__detail-textfour {
+    top: 37.5%;
+    left: 87%;
+  }
+
+  .saxophone__detail-textfive {
+    top: 71%;
+    left: 96%;
+  }
+
+  .container__accidents-grid {
+    display: grid;
+    grid-template-columns: 0.5fr repeat(2, 1fr) 0.75fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    margin-top: 10rem;
+  }
+
+  .container__accidents {
+    height: 100vh;
+  }
+
+  .accidents__grid-one {
+    grid-area: 1 / 2 / 2 / 4;
+  }
+
+  .accidents__grid-two {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+
+  .accidents__grid-three {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .accidents__grid-four {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+
+  .accidents_image1 {
+    position: relative;
+    z-index: -1;
+    margin: 2rem 0rem 0rem 0rem;
+  }
+
+  .accidents_image2 {
+    position: relative;
+    width: 100%;
+    margin: 6rem 0rem 0rem 14rem;
+    z-index: -1;
+  }
+
+  .container__accidents__example-first-text {
+    position: absolute;
+  }
+
+  .container__accidents__example-second-text {
+    position: absolute;
+  }
+
+  .container__title-acid {
+    display: flex;
+  }
+
+  .container__accidents__title {
+    font-size: 6rem;
+    margin: 0rem 4.75rem 0rem 0rem;
+    text-align: right;
+  }
+
+  .container__accidents__text {
+    text-align: justify;
+    width: 80%;
+    margin: 0rem 0rem 0rem 8rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .image__acid {
+    margin: 2rem 0rem 0rem 10rem;
+    height: 120px;
+    width: 150px;
+  }
+
+  .accidents__text-two {
+    margin: 5rem 0rem 0rem 20rem;
+    width: 60%;
+  }
+
+  .container__accidents__example-second-text,
+  .container__accidents__example-first-text {
+    font-family: "IBM Plex Sans";
+    font-style: bold;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 150%;
+    /* identical to box height, or 42px */
+
+    letter-spacing: -0.011em;
+  }
+
+  .container__accidents__example-first-text {
+    margin: 5rem 0rem 0rem 14rem;
+  }
+
+  .container__accidents__example-second-text {
+    margin: 16.25rem 0rem 0rem -3rem;
+    width: 20%;
+  }
+
+  .container__storyline__part1-images-title {
+    font-family: "Jonze & Jonzing";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10rem;
+    line-height: 150%;
+    color: transparent;
+
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: #f1dec4;
+
+    margin: 10rem 0rem 0rem 0rem;
+    /* identical to box height, or 315px */
+
+    letter-spacing: -0.011em;
+  }
+
+  .title__two {
+    margin: -12rem 0rem 0rem 3rem;
+    -webkit-text-stroke-width: 0.05rem;
+    -webkit-text-stroke-color: #ffffff;
+  }
+
+  .container__storyline__part1-title {
+    font-family: "IBM Plex Sans";
+    font-style: bold;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 150%;
+    /* identical to box height, or 75px */
+
+    letter-spacing: -0.011em;
+
+    /* orange_main */
+    margin-left: -10rem;
+
+    color: #e74c14;
+  }
+
+  .container__storyline__part1-flex {
+    display: flex;
+  }
+
+  .container__storyline__part1-flex > div > p {
+    text-align: left;
+    font-size: 1.75rem;
+  }
+
+  .storyline__text_one {
+    width: 60%;
+    margin: 1rem 0rem 0rem 16rem;
+  }
+
+  .storyline__text_two {
+    margin: 2rem 1rem 0rem 40rem;
+    width: 30%;
+  }
+
+  .storyline__text_three {
+    width: 100%;
+  }
+
+  .brasshorn {
+    color: #e74c14;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .rocknroll {
+    color: #f1dec4;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .flex__instruments__triple {
+    display: flex;
+    position: relative;
+  }
+
+  .image1_triple {
+    position: absolute;
+  }
+
+  .image2_triple {
+    position: absolute;
+    margin: 0rem 0rem 0rem 45rem;
+    width: 32.5%;
+    z-index: -1;
+  }
+
+  .image3_triple {
+    position: absolute;
+    margin: -9.2rem 0rem 0rem 78rem;
+  }
+
+  .container__quotes {
+    margin: 30rem 0rem 0rem 0rem;
+  }
+
+  .container__quotes-charlie {
+    display: flex;
+  }
+
+  .container__quotes__title-white {
+    color: #f1dec4;
+    text-align: left;
+  }
+
+  .container__quotes__title-whiteoutline {
+    color: transparent;
+    -webkit-text-stroke-width: 0.3rem;
+    -webkit-text-stroke-color: #f1dec4;
+  }
+
+  .container__quotes__title-orange {
+    text-align: right;
+    width: 80%;
+  }
+
+  .container__quotes__text {
+    width: 40%;
+    text-align: left;
+    margin: 3.5rem 0rem 0rem 2rem;
+  }
+
+  .platehoezen__flex {
+    display: flex;
+  }
+
+  .platehoes1 {
+    position: absolute;
+  }
+  .platehoes2 {
+    margin: 0rem 0rem 0rem 25rem;
+  }
+
+  .container__johnson__texts__text {
+    text-align: left;
+    width: 80%;
+    margin: 10rem 0rem 0rem 4rem;
+  }
+
+  .container__johnson__text-big {
+    color: #f1dec4;
+    font-size: 2.5rem;
+  }
+
+  .container__johnson__text {
+    margin: 5rem 0rem 0rem 5rem;
+  }
+
+  .container__johnson__title {
+    font-family: "Jonze & Jonzing";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8.5rem;
+
+    color: transparent;
+    -webkit-text-stroke-width: 0.2rem;
+    -webkit-text-stroke-color: #e74c14;
+
+    text-align: left;
+    margin: 3rem 0rem 0rem 17.5rem;
+  }
+
+  .johnson__downfall {
+    position: absolute;
+  }
+
+  .johnson__downfall__second {
+    position: absolute;
+    margin: 4rem 0rem 30rem 25rem;
+    z-index: -1;
+  }
+
+  .container__johnson__images__backgroundimage {
+    margin: 10rem 0rem 30rem 0rem;
+  }
+
+  .container__johnson__images {
+    position: relative;
+    height: 100vh;
+  }
+
+  .container__johnson__images__backgroundimage {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+  }
+
+  .container__johnson__images__backgroundimage-text {
+    width: 65%;
+    text-align: left;
+    color: black;
+    font-family: "IBM Plex Sans";
+    font-weight: 500;
+    font-style: bold;
+  }
+  /* horizontal scroll 
+  .horizontal-scroll-wrapper {
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    transform: rotate(-90deg);
+    transform-origin: right top;
+  }
+
+  .horizontal-scroll-wrapper > div {
+    width: 100vw;
+    height: 100vh;
+
+    transform: rotate(90deg);
+  }
+  */
 }
