@@ -1112,12 +1112,13 @@ p {
 
   .johnson__downfall {
     position: absolute;
+    z-index: -1;
   }
 
   .johnson__downfall__second {
     position: absolute;
     margin: 4rem 0rem 30rem 25rem;
-    z-index: -1;
+    z-index: -2;
   }
 
   .container__johnson__images__backgroundimage {
@@ -1143,6 +1144,430 @@ p {
     font-weight: 500;
     font-style: bold;
   }
+
+  /* Vertical scroll again */
+
+  .container__title-downfall {
+    text-align: right;
+    font-size: 20rem;
+    margin: -22rem 4rem 0rem 0rem;
+    line-height: 18rem;
+
+    -webkit-text-stroke-width: 0.4rem;
+  }
+
+  .container__downfall__jazzrock-partone,
+  .container__downfall__jazzrock-parttwo {
+    display: flex;
+    width: 100%;
+  }
+
+  .container__downfall__jazzrock {
+    height: 100vh;
+  }
+
+  .container__downfall__jazzrock-text {
+    font-size: 3rem;
+    text-align: center;
+    width: 40%;
+  }
+
+  .jazzrock_text-jazz {
+    margin: 20rem 0rem 0rem 10rem;
+  }
+
+  .jazzrock_text-rock {
+    margin: 20rem 0rem 0rem 10rem;
+  }
+
+  .width__images__rock {
+    right: 0;
+  }
+
+  .container__quoteguitars-images {
+    justify-content: space-between;
+  }
+
+  .container__quoteguitars-imagessecond {
+    justify-content: space-between;
+  }
+
+  .guitar__one {
+    align-self: center;
+    width: 7%;
+    transform: rotate(-35deg);
+    margin-top: 4rem;
+  }
+
+  .guitar__two {
+    align-self: center;
+    width: 10%;
+    transform: rotate(30deg);
+  }
+
+  .guitar__three {
+    align-self: center;
+    width: 4%;
+  }
+
+  .guitar__four {
+    align-self: center;
+    width: 9%;
+  }
+
+  .guitar__five {
+    align-self: center;
+    width: 5%;
+    transform: rotate(-20deg);
+  }
+
+  .guitar__six {
+    align-self: center;
+    width: 7%;
+    transform: rotate(-20deg);
+  }
+
+  .guitar__seven {
+    align-self: center;
+    width: 9%;
+  }
+
+  .guitar__eight {
+    align-self: center;
+    width: 5%;
+    transform: rotate(-20deg);
+  }
+
+  .guitar__nine {
+    align-self: center;
+    width: 7%;
+    transform: rotate(20deg);
+  }
+
+  .guitar__ten {
+    align-self: center;
+    width: 3%;
+    transform: rotate(-35deg);
+  }
+
+  .container__Quoteguitars__text {
+    width: 100%;
+    font-size: 2rem;
+    margin: 3rem;
+  }
+
+  .container__pinkfloyd__text {
+    font-size: 2.5rem;
+  }
+
+  .container__pinkfloyd__backgroundimage {
+    position: relative;
+  }
+
+  .container__pinkfloyd__backgroundimage-title {
+    font-size: 28rem;
+    position: absolute;
+    -webkit-text-stroke-width: 0.8rem;
+  }
+
+  .pinkfloyd__image-desktop {
+    position: absolute;
+    width: 100vw;
+    margin-top: 5rem;
+  }
+
+  .plattehoezen__background {
+    width: 100vw;
+    margin: 25rem 0rem 0rem 0rem;
+  }
+
+  .container__platehoezen {
+    position: relative;
+  }
+
+  .plattehoezen__background {
+    position: absolute;
+  }
+
+  .container__platehoezen__texts {
+    position: absolute;
+    margin: 64rem 0rem 0rem 5rem;
+  }
+
+  .platehoezen__textone {
+    width: 40%;
+    margin: 3rem 0rem 0rem 3rem;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    background-color: transparent;
+    text-align: left;
+  }
+
+  .platehoezen__texttwo {
+    width: 40%;
+    margin: 65rem 0rem 0rem 57.5rem;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    text-align: left;
+  }
+
+  .platehoezen__textthree {
+    width: 40%;
+    margin: 0rem;
+  }
+
+  .vieuwport__height {
+    height: 300vh;
+  }
+
+  .vieuwport__height-second {
+    height: 190vh;
+  }
+
+  .container__sounds__text {
+    margin: 0;
+  }
+
+  .container__kennyg {
+    position: relative;
+    z-index: -1;
+  }
+
+  .kennyG_backgroundimage {
+    position: absolute;
+    width: 100vw;
+    margin-top: -10rem;
+  }
+
+  .container__kennyg-all {
+    position: absolute;
+  }
+
+  .container__kennyg__title {
+    font-size: 14rem;
+    margin: 32.5rem 0rem 0rem 0rem;
+  }
+
+  .container__kennyg__text {
+    margin: 4rem 5rem 0rem 8rem;
+    width: 50%;
+    text-align: left;
+    font-size: 2.2rem;
+    color: black;
+  }
+
+  .container__title-michael {
+    font-family: "Jonze & Jonzing";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.5rem;
+    line-height: 150%;
+    margin: 0rem;
+    /* identical to box height, or 378px */
+
+    -webkit-text-stroke-width: 0.4rem;
+    -webkit-text-stroke-color: #e74c14;
+    color: transparent;
+
+    letter-spacing: -0.011em;
+
+    /* stroke style */
+  }
+  .span__color-whiteish {
+    color: #f1dec4;
+  }
+
+  .container__michael {
+    margin-top: -10rem;
+    width: 100vw;
+  }
+
+  .container__michael__text {
+    padding: 15rem 0rem 0rem 10rem;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .michael__desktop {
+    right: 0;
+    position: relative;
+    z-index: -1;
+  }
+
+  .container__pop__backgroundimage {
+    position: relative;
+  }
+  .image__pop {
+    position: relative;
+    width: 100vw;
+    z-index: -1;
+    margin-top: -12.5rem;
+  }
+
+  .container__pop__backgroundimage__text {
+    font-size: 2.2rem;
+    width: 60%;
+    margin: -35rem auto;
+    font-weight: 400;
+  }
+
+  .vieuwport__height3 {
+    height: 41vh;
+  }
+
+  .vieuwport__height4 {
+    height: 121vh;
+  }
+
+  .container__sounds {
+    position: relative;
+  }
+
+  .return__background {
+    position: absolute;
+    width: 100vw;
+    z-index: -2;
+  }
+
+  .container__songs__desktop {
+    position: absolute;
+    margin-top: 10rem;
+  }
+
+  .container__songs__desktop-second {
+    position: absolute;
+    margin-top: 43.5rem;
+  }
+
+  .container__sounds__text {
+    margin-top: 16rem;
+    margin-left: 8rem;
+    width: 40%;
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .container__songs__desktop-second {
+    width: 100vw;
+    justify-content: space-between;
+  }
+
+  .saxplayer {
+    margin-left: 24rem;
+  }
+
+  .container__title-return {
+    font-size: 15rem;
+    font-family: "Jonze & Jonzing";
+    font-style: normal;
+    font-weight: 400;
+    margin: -20rem 20rem 0rem -20rem;
+
+    /* identical to box height, or 225px */
+
+    letter-spacing: -0.011em;
+    transform: rotate(90deg);
+
+    -webkit-text-stroke-width: 0.4rem;
+    -webkit-text-stroke-color: #e74c14;
+
+    color: #d9d9d9;
+    width: 10%;
+  }
+
+  .background__tear__second {
+    position: relative;
+  }
+
+  .tear__background {
+    position: absolute;
+    z-index: -1;
+  }
+  .container__lopez__backgroundimage__text {
+    margin: 24rem 0rem 0rem 0rem;
+    font-size: 2rem;
+    width: 90%;
+  }
+
+  .container__newsongss__texts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container__newsongss__texts__text-first {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .image__song__one {
+    grid-area: 2 / 1 / 3 / 2;
+    margin-top: -9rem;
+  }
+  .songs__title__mobile {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+
+  .container__newsongss__texts__text-second {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  .image__song__two {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .vieuwport__height5 {
+    height: 138.5vh;
+  }
+
+  .container__newsongss__texts__text-first {
+    margin: -25rem 0rem 0rem 10rem;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .container__newsongss__texts__text-second {
+    text-align: left;
+    font-size: 2rem;
+    margin: 12rem 0rem 0rem -10rem;
+  }
+
+  .songs__title__mobile {
+    font-size: 10rem;
+    margin: -7.5rem 0rem 0rem -5rem;
+  }
+
+  .container__newsongss__texts-last,
+  .container__newsongss__texts__arianda {
+    display: flex;
+  }
+
+  .flex__Container-last {
+    display: flex;
+  }
+
+  .text__socials {
+    margin: 10rem 8rem 0rem 5rem;
+    width: 40%;
+    text-align: left;
+    font-size: 1.4rem;
+  }
+
+  .text__Arianda {
+    width: 100%;
+    margin: 10rem 0rem 0rem 10rem;
+    text-align: left;
+    font-size: 1.4rem;
+  }
+
+  .image__song__five {
+    margin: 0rem 0rem 0rem -13rem;
+  }
+
   /* horizontal scroll 
   .horizontal-scroll-wrapper {
     background-color: red;
