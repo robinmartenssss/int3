@@ -806,24 +806,24 @@ function playSound18() {
 
 function displayUitleg1() {
   document.getElementById("saxophone__detail").src =
-    "/assets/img/instrument__hover1.png";
+    "/int3/assets/img/instrument__hover1.png";
   console.log(document.getElementById("saxophone__detail"));
 }
 function displayUitleg2() {
   document.getElementById("saxophone__detail").src =
-    "/assets/img/instrument__hover2.png";
+    "/int3/assets/img/instrument__hover2.png";
 }
 function displayUitleg3() {
   document.getElementById("saxophone__detail").src =
-    "/assets/img/instrument__hover3.png";
+    "/int3/assets/img/instrument__hover3.png";
 }
 function displayUitleg4() {
   document.getElementById("saxophone__detail").src =
-    "/assets/img/instrument__hover4.png";
+    "/int3/assets/img/instrument__hover4.png";
 }
 function displayUitleg5() {
   document.getElementById("saxophone__detail").src =
-    "/assets/img/instrument__hover5.png";
+    "/int3/assets/img/instrument__hover5.png";
 }
 
 init();
