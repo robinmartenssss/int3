@@ -1,5 +1,24 @@
+@font-face {
+  font-family: "Jonze & Jonzing";
+  src: local("Jonze & Jonzing"),
+    url(../public/assets/fonts/Jonze&JonzingDEMO-KCFonts.ttf) format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: local("IBM Plex Sans"),
+    url(../public/assets/fonts/IBMPlexSans-Regular.ttf) format("truetype");
+}
+
 body {
   background-image: url("../public/assets/img_mobile/backgroundimage2_mobile.jpg");
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .hidden__mobile {
@@ -8,10 +27,11 @@ body {
 
 .container__flex {
   display: flex;
+  flex-grow: 1;
 }
 
 h1 {
-  font-family: "DIN Condensed";
+  font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 3.5rem;
@@ -44,7 +64,7 @@ p {
   color: white;
   text-align: center;
 }
-
+/*
 .header__container {
   position: relative;
   height: 844px;
@@ -98,12 +118,10 @@ p {
   height: 1052px;
   background-image: url("../public/assets/img_mobile/background__song__mobile.png");
   margin-top: -10%;
-}
+}*/
 
 .header__container__title {
-  position: absolute;
-  top: 20%;
-  left: 35%;
+  padding: 10rem 5rem 0rem 0rem;
 }
 
 .header__container__title-orange {
@@ -117,8 +135,8 @@ p {
 }
 
 .saxophone {
-  position: absolute;
-  top: 25%;
+  margin: -2rem auto;
+  margin-bottom: 4rem;
 }
 
 .container__adolphesax__text {
@@ -129,8 +147,7 @@ p {
   line-height: 120%;
 
   margin: auto;
-  top: 7.5%;
-  position: absolute;
+
   /* or 24px */
 
   text-align: center;
@@ -147,11 +164,6 @@ p {
   color: #e74c14;
 }
 
-.container__adolphesax__adolphe {
-  position: absolute;
-  top: 37.5%;
-}
-
 .container__adolphesax__titel {
   font-family: "Jonze & Jonzing";
   font-style: normal;
@@ -164,9 +176,8 @@ p {
   -webkit-text-stroke-color: #f1dec4;
 
   text-align: right;
-  position: absolute;
-  top: 60%;
-  left: -10%;
+  margin-top: -9.5rem;
+
   /* identical to box height, or 67% */
 }
 
@@ -175,19 +186,24 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 5rem;
+
+  margin: 5rem 0rem 5rem 0rem;
   color: transparent;
   -webkit-text-stroke-width: 0.15rem;
   -webkit-text-stroke-color: #f1dec4;
 }
 
 .saxophone__detail {
-  position: absolute;
-  top: 20%;
-  left: 10%;
+  text-align: center;
+  margin-top: 18rem;
+}
+
+.container__saxophone {
+  position: relative;
 }
 
 .container__saxophone-details p {
-  font-family: "DIN Condensed";
+  font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 1.5rem;
@@ -195,6 +211,10 @@ p {
   /* identical to box height */
 
   color: #ffffff;
+}
+
+.container__saxophone-details {
+  text-align: center;
 }
 
 .saxophone__detail-textone,
@@ -206,36 +226,35 @@ p {
 }
 
 .saxophone__detail-textone {
-  top: 35%;
+  top: 52.5%;
   left: 5%;
 }
 
 .saxophone__detail-texttwo {
-  top: 19%;
+  top: 36%;
   left: 46%;
 }
 
 .saxophone__detail-textthree {
-  top: 47.5%;
+  top: 67.5%;
   left: 23%;
 }
 
 .saxophone__detail-textfour {
-  top: 39.5%;
+  top: 57.5%;
   left: 72.5%;
 }
 
 .saxophone__detail-textfive {
-  top: 60%;
+  top: 80.5%;
   left: 80%;
 }
 
 .container__accidents__text {
-  position: absolute;
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 150%;
 
   /* or 30px */
@@ -244,11 +263,12 @@ p {
   letter-spacing: -0.011em;
 
   color: #ffffff;
+  margin: auto;
+  margin-top: 12rem;
+  width: 90%;
 }
 
 .container__accidents__title {
-  position: absolute;
-
   font-family: "Jonze & Jonzing";
   font-style: normal;
   font-weight: 400;
@@ -258,18 +278,14 @@ p {
   /* identical to box height */
 
   color: #f1dec4;
-
-  top: 40%;
+  margin-top: 4rem;
 }
 
 .container__tears img {
-  margin: 120% 2rem;
+  margin: auto;
 }
 
 .container__storyline__part1-title {
-  position: absolute;
-  top: 15%;
-
   font-family: "Jonze & Jonzing";
   font-style: normal;
   font-weight: 400;
@@ -279,6 +295,7 @@ p {
 
   text-align: center;
   width: 100%;
+  margin: 0rem 0rem 0rem -15rem;
 
   /* orange_main */
 
@@ -287,8 +304,6 @@ p {
 
 .container__storyline__part1-text,
 .container__storyline__part1-texttwo {
-  position: absolute;
-
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
@@ -300,23 +315,29 @@ p {
   letter-spacing: -0.011em;
 
   color: #ffffff;
+  width: 90%;
+  margin: 2rem auto;
+  z-index: 1;
 }
 
 .container__storyline__part1-text {
-  top: 30%;
 }
 .container__storyline__part1-texttwo {
-  top: 52%;
   z-index: 1;
 }
 
 .storyline__duosax {
-  position: absolute;
+  margin-top: 10rem;
 }
 
 .storyline__images {
-  top: 45%;
-  position: absolute;
+  margin-top: -8rem;
+  z-index: -1;
+}
+
+.container__cds {
+  margin-top: -2rem;
+  position: relative;
 }
 
 .container__cds-cd {
@@ -324,18 +345,15 @@ p {
 }
 
 .cds__two {
-  top: 25%;
-  right: 0%;
+  top: 4%;
+  right: 0;
 }
 
 .cds__one {
-  top: 30%;
+  margin-top: 2.5rem;
 }
 
 .container__quotes__text {
-  position: absolute;
-  top: 7.5%;
-
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
@@ -351,25 +369,33 @@ p {
 }
 
 .cd__titleone {
-  top: 22.5%;
-  left: 20%;
+  position: absolute;
+  margin-top: -2rem;
+  margin-left: 5rem;
+
   -webkit-text-stroke-width: 0.2rem;
   -webkit-text-stroke-color: #e74c14;
   font-size: 6rem;
 }
 
 .cd__titletwo {
-  top: 55%;
-  left: 30%;
+  position: absolute;
   -webkit-text-stroke-width: 0.2rem;
   -webkit-text-stroke-color: #ebd633;
-  font-size: 6rem;
+  font-size: 5.25rem;
+
+  margin-top: 15rem;
+  margin-left: 10rem;
+  top: 10%;
+  z-index: -1;
+}
+
+.container__quotes-charlie {
+  margin-bottom: 5rem;
 }
 
 .container__johnson__texts__text {
   color: white;
-  position: absolute;
-  top: 5%;
 
   font-family: "IBM Plex Sans";
   font-style: normal;
@@ -378,11 +404,13 @@ p {
   line-height: 150%;
 
   text-align: center;
+  margin-top: 25rem;
 }
 
 .rock__mobile {
   position: absolute;
-  right: 0%;
+  right: 0;
+  z-index: -1;
 }
 
 .container__downfall__jazzrock-text {
@@ -397,24 +425,20 @@ p {
   letter-spacing: -0.011em;
 
   color: rgba(255, 255, 255, 0.8);
+  width: 70%;
 }
 
 .jazzrock_text-jazz {
-  position: absolute;
-  top: 30%;
-  right: 10%;
-  width: 70%;
+  margin: 5rem 0rem 0rem -5rem;
   z-index: 1;
 }
 
 .jazzrock_text-rock {
-  position: absolute;
   text-align: left;
-  top: 70%;
-  left: 10%;
-  width: 70%;
-  z-index: 1;
+  margin-top: 8rem;
+  margin-left: 2.5rem;
 }
+
 .container__pinkfloyd__text {
   font-family: "IBM Plex Sans";
   font-style: normal;
@@ -425,12 +449,12 @@ p {
 
   text-align: center;
   letter-spacing: -0.011em;
+  margin: 10rem 0rem 0rem 0rem;
 
   color: rgba(255, 255, 255, 0.8);
 }
 
 .container__pinkfloyd__backgroundimage-title {
-  position: absolute;
   font-family: "Jonze & Jonzing";
   font-style: normal;
   font-weight: 400;
@@ -444,13 +468,17 @@ p {
   z-index: 1;
 }
 
+.container__pinkfloyd {
+  position: relative;
+}
+
 .pinkfloyd__image-mobile {
   position: absolute;
-  top: 45%;
+  top: 40%;
+  z-index: -1;
 }
 
 .container__platehoezen__text {
-  position: absolute;
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
@@ -466,32 +494,38 @@ p {
   color: #000000;
 }
 
-.container__platehoezen-background {
-  position: absolute;
+.container__platehoezen {
+  z-index: -1;
 }
 
 .platehoezen__textone {
-  width: 90%;
-  left: 5%;
-  top: 8.5%;
+  background-color: red;
 }
 
 .platehoezen__texttwo {
-  top: 87.5%;
+  margin-top: -66.5rem;
+}
+
+.platehoezen__textthree {
+  margin-top: 52.5rem;
+  margin-bottom: 5rem;
+}
+
+.container__platehoezen__texts {
   width: 90%;
-  left: 5%;
+  margin: auto;
 }
 
 .container__kennyg__text {
-  position: absolute;
-  top: 45%;
-
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 150%;
   text-align: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 5rem;
 
   /* or 30px */
 
@@ -505,25 +539,42 @@ p {
   font-size: 8.4rem;
   line-height: 164px;
   text-align: center;
+
   /* identical to box height, or 109% */
 
   color: #f1dec4;
 }
 
+.container__pop__backgroundimage {
+  text-align: center;
+  margin: auto;
+}
+
+.container__sounds__rock {
+  margin: auto;
+  width: 90%;
+}
+
 .container__pop__backgroundimage__text {
-  position: absolute;
-  top: 37.5%;
+  margin: -10rem 0rem 5rem 0rem;
+}
+
+.container__sounds__image {
+  margin-top: -3.4rem;
 }
 
 .container__sounds__text {
-  position: absolute;
-  top: 15%;
+  margin-top: -57.5rem;
+  margin-bottom: 22.5rem;
   color: black;
+  width: 100%;
+  text-align: center;
 }
 
 .container__lopez__backgroundimage__text {
-  position: absolute;
-  top: 70%;
+  margin-top: 27.5rem;
+  width: 80%;
+  margin: auto;
   color: black;
 }
 
@@ -541,18 +592,18 @@ p {
 
 .image__song__one {
   z-index: -1;
-  top: -5%;
+  margin-top: -2rem;
 }
 
 .image__song__two {
-  top: 20%;
-  right: 0;
   z-index: -1;
+  right: 0;
+  margin-top: -32.5rem;
 }
 
 .image__song__three {
-  top: 80%;
   z-index: -1;
+  left: 0;
 }
 
 .songs__title__mobile {
@@ -564,8 +615,1128 @@ p {
   margin-top: 15%;
   color: #f1dec4;
 }
-.container__newsongss__texts__text {
-  width: 85%;
-  margin: 15% auto;
-  margin-bottom: 5%;
+
+.container__newsongss__texts {
+  width: 75%;
+  margin: auto;
+  padding-top: 7.5rem;
+}
+
+.container__newsongss__texts__arianda {
+  width: 75%;
+  margin: auto;
+}
+
+.container__newsongss__texts__title {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+}
+
+/* START DESKTOP */
+
+@media (min-width: 391px) {
+  body {
+    background-image: url("../public/assets/img/background__main.png");
+    max-width: 100%;
+
+    height: 100vh;
+  }
+
+  .hidden__desktop {
+    display: none;
+  }
+
+  .background_image1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .hidden__mobile {
+    display: block;
+  }
+
+  .header__container__title {
+    position: absolute;
+    top: 8%;
+    left: 44%;
+    text-align: left;
+    font-size: 6rem;
+    line-height: 5.25rem;
+  }
+
+  .header__container__title-orange {
+    font-size: 5.5rem;
+    text-align: right;
+
+    color: #e74c14;
+  }
+
+  .saxophone__desktop {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+  }
+
+  .adolphesax {
+    margin-bottom: -8.25rem;
+  }
+
+  .container__adolphesax__titel {
+    font-size: 4rem;
+    color: #e74c14;
+
+    -webkit-text-stroke-width: 0rem;
+
+    transform: rotate(90deg);
+
+    margin: 1rem 0rem 0rem 17rem;
+
+    /* identical to box height, or 67% */
+  }
+
+  .container__adolphesax__titel-secondary {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 150%;
+    /* identical to box height, or 90px */
+
+    margin: -3rem 0rem 0rem 37.5rem;
+
+    letter-spacing: -0.011em;
+
+    color: #f1dec4;
+  }
+
+  .container__adolphesax__text {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    text-align: left;
+    width: 40%;
+    /* or 42px */
+
+    letter-spacing: -0.011em;
+  }
+
+  .container__adolphesax {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .background_image2 {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container__adolphesax__grid {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 0.75fr) repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    top: 0%;
+  }
+  .container__adolphe__gridone {
+    display: flex;
+    grid-area: 1 / 1 / 3 / 5;
+  }
+  .container__adolphe__gridtwo {
+    grid-area: 3 / 1 / 5 / 4;
+  }
+  .container__adolphe__gridthree {
+    grid-area: 3 / 4 / 5 / 5;
+
+    position: absolute;
+
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .container__adolphesax__instruments {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.75fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    margin: 0rem 0rem 0rem 30rem;
+    width: 80%;
+  }
+
+  .container__adolphesax__instruments {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .container__adolphesax__instruments-second {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-top: 2rem;
+  }
+
+  .container__adolphesax__instruments-third {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .instrument__text {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    /* or 42px */
+
+    color: #f1dec4;
+  }
+
+  .instrumenttextone {
+    margin: -4rem 0rem 4rem 0rem;
+  }
+
+  .instrumenttexttwo {
+    display: flex;
+  }
+
+  .instrumenttextthree {
+    margin: -8rem 0rem 0rem 0rem;
+  }
+
+  .container__saxophone {
+    position: relative;
+    height: 100vh;
+  }
+
+  .container__saxophone__title {
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    text-align: left;
+
+    font-family: "Jonze & Jonzing";
+    line-height: 2.75rem;
+    font-size: 5rem;
+    font-weight: 400;
+  }
+
+  .container__saxophone-details {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+  }
+
+  .container__saxophone-details p {
+    font-size: 2rem;
+  }
+
+  .saxophone__detail {
+    margin: 0rem;
+  }
+
+  .saxophone__detail-subtitle {
+    color: #e74c14;
+    font-family: "IBM Plex Sans";
+  }
+
+  .saxophone__detail-textone {
+    top: 23.5%;
+    left: -17%;
+  }
+
+  .saxophone__detail-texttwo {
+    top: 8%;
+    left: 43%;
+  }
+
+  .saxophone__detail-textthree {
+    top: 62.5%;
+    left: 30%;
+  }
+
+  .saxophone__detail-textfour {
+    top: 37.5%;
+    left: 87%;
+  }
+
+  .saxophone__detail-textfive {
+    top: 71%;
+    left: 96%;
+  }
+
+  .container__accidents-grid {
+    display: grid;
+    grid-template-columns: 0.5fr repeat(2, 1fr) 0.75fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    margin-top: 10rem;
+  }
+
+  .container__accidents {
+    height: 100vh;
+  }
+
+  .accidents__grid-one {
+    grid-area: 1 / 2 / 2 / 4;
+  }
+
+  .accidents__grid-two {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+
+  .accidents__grid-three {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .accidents__grid-four {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+
+  .accidents_image1 {
+    position: relative;
+    z-index: -1;
+    margin: 2rem 0rem 0rem 0rem;
+  }
+
+  .accidents_image2 {
+    position: relative;
+    width: 100%;
+    margin: 6rem 0rem 0rem 14rem;
+    z-index: -1;
+  }
+
+  .container__accidents__example-first-text {
+    position: relative;
+    width: 100%;
+  }
+
+  .container__accidents__example-second-text {
+    width: 100%;
+    position: relative;
+  }
+
+  .container__title-acid {
+    display: flex;
+  }
+
+  .container__accidents__title {
+    font-size: 6rem;
+    margin: 0rem 4.75rem 0rem 0rem;
+    text-align: right;
+  }
+
+  .container__accidents__text {
+    text-align: justify;
+    width: 80%;
+    margin-left: 8rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .image__acid {
+    margin: 2rem 0rem 0rem 10rem;
+    height: 120px;
+    width: 150px;
+  }
+
+  .accidents__text-two {
+    margin: 0rem 0rem 0rem 20rem;
+    width: 60%;
+  }
+
+  .container__accidents__example-second-text,
+  .container__accidents__example-first-text {
+    font-family: "IBM Plex Sans";
+    font-style: bold;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 150%;
+    /* identical to box height, or 42px */
+
+    letter-spacing: -0.011em;
+  }
+
+  .container__accidents__example-first-text {
+    margin: 5rem 0rem 0rem 14rem;
+  }
+
+  .container__accidents__example-second-text {
+    margin: 16.25rem 0rem 0rem -3rem;
+    width: 20%;
+  }
+
+  .container__storyline__part1-title {
+    font-family: "IBM Plex Sans";
+    font-style: bold;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 150%;
+    /* identical to box height, or 75px */
+
+    letter-spacing: -0.011em;
+
+    /* orange_main */
+
+    color: #e74c14;
+  }
+
+  .container__storyline__part1-flex {
+    display: flex;
+  }
+
+  .container__storyline__part1-flex > div > p {
+    text-align: left;
+    font-size: 1.75rem;
+  }
+
+  .storyline__text_one {
+    margin: 1rem 0rem 0rem 10rem;
+    width: 65%;
+  }
+
+  .storyline__text_two {
+    margin: 2rem 1rem 0rem 35rem;
+    width: 40%;
+    font-size: 1.75rem;
+  }
+
+  .storyline__text_three {
+    width: 100%;
+  }
+
+  .brasshorn {
+    color: #e74c14;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .rocknroll {
+    color: #f1dec4;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .flex__instruments__triple {
+    display: flex;
+    position: relative;
+  }
+
+  .container__storyline__part1-images-title {
+    position: absolute;
+    font-family: "Jonze & Jonzing";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13rem;
+    line-height: 150%;
+    color: transparent;
+
+    -webkit-text-stroke-width: 0.2rem;
+    -webkit-text-stroke-color: #ffffff;
+
+    margin: 6rem 0rem 0rem -20rem;
+    /* identical to box height, or 315px */
+
+    letter-spacing: -0.011em;
+  }
+
+  .title__two {
+    margin: 10rem 0rem 0rem -17rem;
+    -webkit-text-stroke-width: 0.05rem;
+    -webkit-text-stroke-color: #ffffff;
+  }
+
+  .image1_triple {
+    position: absolute;
+    margin-left: 14rem;
+  }
+
+  .image2_triple {
+    position: absolute;
+    margin: 0rem 0rem 0rem 59rem;
+    width: 32.5%;
+    z-index: -1;
+  }
+
+  .image3_triple {
+    position: absolute;
+    margin: -9.2rem 0rem 0rem 52rem;
+  }
+
+  .container__storyline__part1 {
+    margin: -20.2rem 0rem 0rem 0rem;
+  }
+
+  .container__quotes {
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .container__quotes-charlie {
+    display: flex;
+  }
+
+  .container__quotes__title-white {
+    color: #f1dec4;
+    text-align: left;
+    font-size: 8rem;
+    margin: 5rem 0rem 0rem 0rem;
+  }
+
+  .container__quotes__title-whiteoutline {
+    color: transparent;
+    -webkit-text-stroke-width: 0.3rem;
+    -webkit-text-stroke-color: #f1dec4;
+    font-size: 8rem;
+
+    margin: 10rem 0rem 0rem 15rem;
+  }
+
+  .container__quotes__title-orange {
+    font-size: 8rem;
+    text-align: right;
+    width: 80%;
+
+    margin: 4rem 0rem 0rem 35rem;
+  }
+
+  .container__quotes__text {
+    width: 60%;
+    text-align: left;
+    margin: 7rem -10rem 0rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .platehoezen__flex {
+    margin: 0rem 0rem 0rem -14rem;
+    display: flex;
+  }
+
+  .platehoes1 {
+    position: absolute;
+  }
+  .platehoes2 {
+    margin: 0rem 0rem 0rem 25rem;
+  }
+
+  .container__johnson__texts__text {
+    text-align: left;
+    width: 80%;
+    margin: 20rem 0rem 0rem 4rem;
+    font-size: 2rem;
+  }
+
+  .container__johnson__text-big {
+    color: #f1dec4;
+    font-size: 3.5rem;
+  }
+
+  .container__johnson__text {
+    margin: 5rem 0rem 0rem 5rem;
+  }
+
+  .container__johnson__title {
+    font-family: "Jonze & Jonzing";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.5rem;
+
+    color: transparent;
+    -webkit-text-stroke-width: 0.2rem;
+    -webkit-text-stroke-color: #e74c14;
+
+    text-align: left;
+    margin: 0rem 0rem 0rem 25.5rem;
+  }
+
+  .johnson__downfall {
+    position: absolute;
+    margin-left: -48rem;
+    z-index: -1;
+  }
+
+  .johnson__downfall__second {
+    position: absolute;
+    margin: 4rem 0rem 30rem 25rem;
+    z-index: -2;
+  }
+
+  .container__johnson__images__backgroundimage {
+    margin: 10rem 0rem 30rem 0rem;
+  }
+
+  .container__johnson__images {
+    position: relative;
+    height: 100vh;
+  }
+
+  .container__johnson__images__backgroundimage {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+  }
+
+  .container__johnson__images__backgroundimage-text {
+    width: 65%;
+    text-align: left;
+    color: black;
+    font-family: "IBM Plex Sans";
+    font-weight: 500;
+    font-style: bold;
+  }
+
+  /* Vertical scroll again */
+
+  .container__title-downfall {
+    text-align: right;
+    font-size: 20rem;
+    margin: 0rem 4rem 0rem 0rem;
+    line-height: 18rem;
+
+    -webkit-text-stroke-width: 0.4rem;
+  }
+
+  .container__downfall__jazzrock-partone,
+  .container__downfall__jazzrock-parttwo {
+    display: flex;
+    width: 100%;
+  }
+
+  .container__downfall__jazzrock {
+    height: 100vh;
+  }
+
+  .container__downfall__jazzrock-text {
+    font-size: 3rem;
+    text-align: center;
+    width: 40%;
+  }
+
+  .jazzrock_text-jazz {
+    margin: 20rem 0rem 0rem 10rem;
+  }
+
+  .jazzrock_text-rock {
+    margin: 20rem 0rem 0rem 10rem;
+  }
+
+  .width__images__rock {
+    right: 0;
+  }
+
+  .container__quoteguitars-images {
+    justify-content: space-between;
+  }
+
+  .container__quoteguitars-imagessecond {
+    justify-content: space-between;
+  }
+
+  .guitar__one {
+    align-self: center;
+    width: 7%;
+    transform: rotate(-35deg);
+    margin-top: 4rem;
+  }
+
+  .guitar__two {
+    align-self: center;
+    width: 10%;
+    transform: rotate(30deg);
+  }
+
+  .guitar__three {
+    align-self: center;
+    width: 4%;
+  }
+
+  .guitar__four {
+    align-self: center;
+    width: 9%;
+  }
+
+  .guitar__five {
+    align-self: center;
+    width: 5%;
+    transform: rotate(-20deg);
+  }
+
+  .guitar__six {
+    align-self: center;
+    width: 7%;
+    transform: rotate(-20deg);
+  }
+
+  .guitar__seven {
+    align-self: center;
+    width: 9%;
+  }
+
+  .guitar__eight {
+    align-self: center;
+    width: 5%;
+    transform: rotate(-20deg);
+  }
+
+  .guitar__nine {
+    align-self: center;
+    width: 7%;
+    transform: rotate(20deg);
+  }
+
+  .guitar__ten {
+    align-self: center;
+    width: 3%;
+    transform: rotate(-35deg);
+  }
+
+  .container__Quoteguitars__text {
+    width: 100%;
+    font-size: 2rem;
+    margin: 3rem;
+  }
+
+  .container__pinkfloyd__text {
+    font-size: 2.5rem;
+  }
+
+  .container__pinkfloyd__backgroundimage {
+    position: relative;
+  }
+
+  .container__pinkfloyd__backgroundimage-title {
+    font-size: 28rem;
+    position: absolute;
+    -webkit-text-stroke-width: 0.8rem;
+  }
+
+  .pinkfloyd__image-desktop {
+    position: absolute;
+    width: 100vw;
+    margin-top: 5rem;
+  }
+
+  .plattehoezen__background {
+    width: 100vw;
+    margin: 25rem 0rem 0rem 0rem;
+  }
+
+  .container__platehoezen {
+    position: relative;
+  }
+
+  .plattehoezen__background {
+    position: absolute;
+  }
+
+  .container__platehoezen__texts {
+    position: absolute;
+    margin: 64rem 0rem 0rem 5rem;
+  }
+
+  .platehoezen__textone {
+    width: 40%;
+    margin: 3rem 0rem 0rem 3rem;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    background-color: transparent;
+    text-align: left;
+  }
+
+  .platehoezen__texttwo {
+    width: 40%;
+    margin: 65rem 0rem 0rem 57.5rem;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    text-align: left;
+  }
+
+  .platehoezen__textthree {
+    width: 40%;
+    margin: 0rem;
+  }
+
+  .vieuwport__height {
+    height: 300vh;
+  }
+
+  .vieuwport__height-second {
+    height: 190vh;
+  }
+
+  .container__sounds__text {
+    margin: 0;
+  }
+
+  .container__kennyg {
+    position: relative;
+    z-index: -1;
+  }
+
+  .kennyG_backgroundimage {
+    position: absolute;
+    width: 100vw;
+    margin-top: -10rem;
+  }
+
+  .container__kennyg-all {
+    position: absolute;
+  }
+
+  .container__kennyg__title {
+    font-size: 14rem;
+    margin: 32.5rem 0rem 0rem 0rem;
+  }
+
+  .container__kennyg__text {
+    margin: 4rem 5rem 0rem 8rem;
+    width: 50%;
+    text-align: left;
+    font-size: 2.2rem;
+    color: black;
+  }
+
+  .container__title-michael {
+    font-family: "Jonze & Jonzing";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.5rem;
+    line-height: 150%;
+    margin: 0rem;
+    /* identical to box height, or 378px */
+
+    -webkit-text-stroke-width: 0.4rem;
+    -webkit-text-stroke-color: #e74c14;
+    color: transparent;
+
+    letter-spacing: -0.011em;
+
+    /* stroke style */
+  }
+  .span__color-whiteish {
+    color: #f1dec4;
+  }
+
+  .container__michael {
+    margin-top: -10rem;
+    width: 100vw;
+  }
+
+  .container__michael__text {
+    padding: 15rem 0rem 0rem 10rem;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .michael__desktop {
+    right: 0;
+    position: relative;
+    z-index: -1;
+  }
+
+  .container__pop__backgroundimage {
+    position: relative;
+  }
+  .image__pop {
+    position: relative;
+    width: 100vw;
+
+    margin-top: -12.5rem;
+  }
+
+  .container__pop__backgroundimage__text {
+    font-size: 2.2rem;
+    width: 60%;
+    margin: -35rem auto;
+    font-weight: 400;
+  }
+
+  .vieuwport__height3 {
+    height: 41vh;
+  }
+
+  .vieuwport__height4 {
+    height: 121vh;
+    background-image: url("../public/assets/img/background__Return.png");
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .container__sounds {
+    position: relative;
+  }
+
+  .return__background {
+    position: relative;
+    width: 100vw;
+    z-index: -2;
+  }
+
+  .container__songs__desktop {
+    position: relative;
+  }
+
+  .container__songs__desktop-second {
+    position: relative;
+    margin-top: 2.7rem;
+  }
+
+  .container__sounds__text {
+    margin-top: 16rem;
+    margin-left: 8rem;
+    width: 40%;
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .container__songs__desktop-second {
+    width: 100vw;
+    justify-content: space-between;
+  }
+
+  .saxplayer {
+    margin-left: 24rem;
+  }
+
+  .container__title-return {
+    font-size: 17rem;
+    font-family: "Jonze & Jonzing";
+    font-style: normal;
+    font-weight: 400;
+    margin: -5rem 20rem 0rem -22.5rem;
+
+    /* identical to box height, or 225px */
+
+    letter-spacing: -0.011em;
+    transform: rotate(90deg);
+
+    -webkit-text-stroke-width: 0.4rem;
+    -webkit-text-stroke-color: #e74c14;
+
+    color: #d9d9d9;
+    width: 10%;
+  }
+
+  .background__tear__second {
+    position: relative;
+  }
+
+  .tear__background {
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+  }
+  .container__lopez__backgroundimage__text {
+    margin: 31.5rem 0rem 0rem 4rem;
+    font-size: 2.5rem;
+    width: 75%;
+  }
+
+  .container__newsongss__texts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container__newsongss__texts__text-first {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 110%;
+  }
+
+  .image__song__one {
+    grid-area: 2 / 1 / 3 / 2;
+    bottom: 0;
+  }
+  .songs__title__mobile {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+
+  .container__newsongss__texts__text-second {
+    grid-area: 2 / 3 / 3 / 4;
+    margin: 0rem 0rem 0rem -5rem;
+  }
+
+  .image__song__two {
+    grid-area: 1 / 3 / 2 / 4;
+    margin: 0;
+    top: 0;
+  }
+
+  .container__newsongss__texts__text-first {
+    margin: 10rem 0rem 0rem 10rem;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .container__newsongss__texts__text-second {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .songs__title__mobile {
+    font-size: 10rem;
+    margin: -7.5rem 0rem 0rem -5rem;
+  }
+
+  .container__newsongss__texts-last,
+  .container__newsongss__texts__arianda {
+    display: flex;
+  }
+
+  .flex__Container-last {
+    display: flex;
+  }
+
+  .text__socials {
+    margin: 10rem 8rem 0rem 5rem;
+    width: 40%;
+    text-align: left;
+    font-size: 1.4rem;
+  }
+
+  .text__Arianda {
+    width: 100%;
+    margin: 10rem 0rem 0rem 10rem;
+    text-align: left;
+    font-size: 1.4rem;
+  }
+
+  .image__song__five {
+    margin: 0rem 0rem 0rem -13rem;
+  }
+
+  .test {
+    background-color: red;
+  }
+  /* horizontal scorll test 
+  */
+
+  .horizontal-scroll-wrapper {
+    display: flex;
+    min-height: 100vh;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .horizontal-scroll-wrapper-second {
+    display: flex;
+    min-height: 100vh;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+    margin-top: 6rem;
+  }
+
+  .wrapper {
+    min-height: 100vh;
+    align-items: center;
+    color: white;
+    border: 1px solid black;
+    display: flex;
+    flex: 0 0 100vw;
+    font-size: 40px;
+    justify-content: center;
+  }
+
+  .wrappertwo {
+    min-height: 100vh;
+
+    color: white;
+    border: 1px solid black;
+    display: flex;
+    flex: 0 0 100vw;
+    font-size: 40px;
+    justify-content: space-between;
+  }
+
+  .alternativewrapper {
+    min-height: 100vh;
+
+    color: white;
+    border: 1px solid black;
+    display: flex;
+    flex: 0 0 134vw;
+    font-size: 40px;
+    justify-content: space-between;
+    background-image: url("../public/assets/img/rihanna__background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .header__container {
+    position: relative;
+    background-image: url("../public/assets/img/desktop__background1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .container__adolphesax {
+    background-image: url("../public/assets/img/desktop__background2.png");
+    background-size: cover;
+  }
+
+  .container__flex__rock {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .container__newsongss__texts__title {
+    margin-top: 25rem;
+  }
+
+  .container__newsongss__texts__text-second {
+    margin-top: 15rem;
+    margin-left: -15rem;
+    width: 150%;
+  }
+
+  .grid__Arianda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .text__socials {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .image__song__four {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .image__song__five {
+    grid-area: 2 / 1 / 3 / 2;
+    margin-left: 5rem;
+    margin-top: 9.7rem;
+  }
+
+  .text__Arianda {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .text__socials {
+    width: 80%;
+    margin: 17.5rem 0rem 0rem 8rem;
+    font-size: 2rem;
+  }
+
+  .text__Arianda {
+    width: 100%;
+    margin: 15rem 0rem 0rem 0rem;
+    font-size: 2rem;
+    text-align: center;
+  }
 }
