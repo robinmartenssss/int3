@@ -6,14 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Saxophone Fatigue</title>
+    <link rel="icon" type="image/x-icon" href="public/assets/img/sax.png">
   </head>
 
+
+
   <body>
+  <div>
+    <audio id="johnson">
+      <source src="/assets/audio/Plas Johnson - Pink Panther Rare.mp3"></source>
+    </audio>
+
+    <audio id="parker">
+      <source src="/assets/audio/Charlie Parker - All the things you are.mp3"></source>
+    </audio>
+
+    <audio id="johnson2">
+      <source src="/assets/audio/Too Close for Comfort.mp3"></source>
+    </audio>
+
+    <audio id="song4">
+      <source src="/assets/audio/321Jazz - Coffee Time [ Cafe Jazz Music 2020 ].mp3"></source>
+    </audio>
+
+    <audio id="song5">
+      <source src="/assets/audio/The Jimi Hendrix Experience - All Along The Watchtower (Official Audio).mp3"></source>
+    </audio>
+
+    <audio id="song6">
+      <source src="/assets/audio/pink floyd - another brick in the wall.mp3"></source>
+    </audio>
+
+    <audio id="song7">
+      <source src="/assets/audio/David Sanborn - Mindblowing Sax Solo (Montreux 1997).mp3"></source>
+    </audio>
+
+    <audio id="song8">
+      <source src="/assets/audio/Java Jazz Fesival - PFG - TOM SCOTT Java Jazz 2010.mp3"></source>
+    </audio>
+
+    <audio id="song9">
+      <source src="/assets/audio/Kenny G - The Moment (Official Video).mp3"></source>
+    </audio>
+    
+
+    <audio id="song10">
+      <source src="/assets/audio/Jennifer Lopez - Get Right (Official Video).mp3"></source>
+    </audio>
+
+    <audio id="song11">
+      <source src="/assets/audio/Beyoncé - Work It Out (Video).mp3"></source>
+    </audio>
+
+    <audio id="song12">
+      <source src="/assets/audio/Katy Perry - Last Friday Night (T.G.I.F.) (Official Music Video).mp3"></source>
+    </audio>
+
+
+    
+    <audio id="song13">
+      <source src="/assets/audio/Lady Gaga - The Edge Of Glory (Official Music Video).mp3"></source>
+    </audio>
+
+    <audio id="song14">
+      <source src="/assets/audio/Jason Derulo - Talk Dirty feat. 2 Chainz [Official HD Music Video].mp3"></source>
+    </audio>
+
+    <audio id="song15">
+      <source src="/assets/audio/MACKLEMORE & RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO).mp3"></source>
+    </audio>
+    
+    <audio id="song16">
+      <source src="/assets/audio/Redfoo - New Thang (Official Video).mp3"></source>
+    </audio>
+
+    <audio id="song17">
+      <source src="/assets/audio/Ariana Grande ft. Iggy Azalea - Problem (Official Video).mp3"></source>
+    </audio>
+
+    <audio id="song18">
+      <source src="/assets/audio/Clarence Clemons - Jungleland solo -  2009.mkv.mp3"></source>
+    </audio>
+
+    <audio id="song19">
+      <source src="/assets/audio/Beyoncé - Work It Out (Video).mp3"></source>
+    </audio>
+
+    <audio id="song20">
+      <source src="/assets/audio/Katy Perry - Last Friday Night (T.G.I.F.) (Official Music Video).mp3"></source>
+    </audio>
+  </div>
+  
+
+
+    <div class="hidden__desktop nav__mobile">
+      <img class="nav" src="/assets/img/mim.svg" alt="mim" />
+
+      <div class="language__mobile">
+        <p>NL</p>
+        <p>FR</p>
+        <p>ENG</p>
+      </div>
+    </div>
+
     <div class="horizontal-scroll-wrapper">
+      <div class="hidden__mobile">
+        <img class="nav" src="/assets/img/mim.svg" alt="mim" />
+
+        <p>NL</p>
+        <p>FR</p>
+        <p>ENG</p>
+      </div>
+
       <div class="header__container wrapper">
-        <nav>
-          <!--- nav if needed-->
-        </nav>
         <h1 class="header__container__title">
           Saxophone <br />
           <span class="header__container__title-orange fatigue__class"
@@ -21,10 +126,14 @@
           >
         </h1>
 
+        <p class="text__intro">Search for songs troughout the website for a complete  <a href="https://www.mim.be/nl"><span class="span__color-orange"
+          >MIM Museum</span></a> feeling <br>  <span class="span__color-orange enjoy"
+          >Enjoy</span>!</p>
+
         <picture class="saxophone__desktop">
           <source
             media="(max-width: 390px)"
-            srcset="public/assets/img_mobile/saxophone_image_mobile.png"
+            srcset="/assets/img_mobile/saxophone_image_mobile.png"
           />
           <source
             media="(max-width: 1440px)"
@@ -32,7 +141,7 @@
           />
           <img
             class="saxophone"
-            src="public/assets/img/saxophone_image.png"
+            src="/assets/img/saxophone_image.png"
             alt="saxophone"
           />
         </picture>
@@ -84,11 +193,11 @@
           <picture class="adolphesax">
             <source
               media="(max-width: 390px)"
-              srcset="public/assets/img_mobile/adolphsax_mobile.png"
+              srcset="/assets/img_mobile/adolphsax_mobile.png"
             />
             <source media="(max-width: 1440px)" srcset="assets/img/adolphsax" />
             <img
-              src="public/assets/img_mobile/adolphsax_mobile.png"
+              src="/assets/img_mobile/adolphsax_mobile.png"
               alt="adolphe sax"
             />
           </picture>
@@ -100,7 +209,7 @@
       <div class="container__adolphesax hidden__mobile wrapper">
         <img
           class="background_image2"
-          src="public/assets/img/desktop__background2.png"
+          src="/assets/img/desktop__background2.png"
           alt=""
         />
 
@@ -134,17 +243,17 @@
 
             <div class="container__adolphesax__instruments hidden__mobile">
               <div class="container__adolphesax__instruments-first">
-                <img src="public/assets/img/instrument1.png" alt="saxotromba" />
+                <img src="/assets/img/instrument1.png" alt="saxotromba" />
                 <p class="instrument__text instrumenttextone">Saxotromba</p>
               </div>
 
               <div class="container__adolphesax__instruments-second">
-                <img src="public/assets/img/instrument2.png" alt="saxhorn" />
+                <img src="/assets/img/instrument2.png" alt="saxhorn" />
                 <p class="instrument__text instrumenttexttwo">Saxhorn</p>
               </div>
 
               <div class="container__adolphesax__instruments-third">
-                <img src="public/assets/img/instrument3.png" alt="saxtube" />
+                <img src="/assets/img/instrument3.png" alt="saxtube" />
                 <p class="instrument__text instrumenttextthree">Saxtube</p>
               </div>
             </div>
@@ -155,15 +264,15 @@
               <picture>
                 <source
                   media="(max-width: 390px)"
-                  srcset="public/assets/img_mobile/adolphsax_mobile.png"
+                  srcset="/assets/img_mobile/adolphsax_mobile.png"
                 />
                 <source
                   media="(max-width: 1440px)"
-                  srcset="public/assets/img/adolph_sax.png"
+                  srcset="/assets/img/adolph_sax.png"
                 />
                 <img
                   class="adolphesax"
-                  src="public/assets/img/adolph_sax.png"
+                  src="/assets/img/adolph_sax.png"
                   alt="adolphe sax"
                 />
               </picture>
@@ -176,38 +285,7 @@
         </div>
       </div>
 
-      <!--<h2 class="container__adolphesax__titel">sax <br />adolphe</h2>-->
-
-      <div class="container__saxophone wrapper">
-        <h1 class="container__saxophone__title hidden__mobile">
-          The Saxophone <span class="hidden__mobile"><br /></span>
-          <span class="saxophone__detail-subtitle">Details</span>
-        </h1>
-
-        <div class="container__saxophone-details">
-          <picture>
-            <source
-              media="(max-width: 390px)"
-              srcset="public/assets/img_mobile/saxophone_uitleg_mobile.png"
-            />
-            <source
-              media="(max-width: 1440px)"
-              srcset="public/assets/img/saxophone__uitleg.png"
-            />
-            <img
-              class="saxophone__detail"
-              src="public/assets/img/saxophone__uitleg.png"
-              alt="saxophone"
-            />
-          </picture>
-
-          <p class="saxophone__detail-textone">Mouthpiece</p>
-          <p class="saxophone__detail-texttwo">Neck</p>
-          <p class="saxophone__detail-textthree">Keys</p>
-          <p class="saxophone__detail-textfour">Bell</p>
-          <p class="saxophone__detail-textfive">Body</p>
-        </div>
-      </div>
+      <!-- <h2 class="container__adolphesax__titel-vertical">sax adolphe</h2>-->
 
       <div class="container__accidents wrapper">
         <div class="container__accidents-grid">
@@ -215,7 +293,7 @@
             <div class="container__title-acid">
               <img
                 class="image__acid hidden__mobile"
-                src="public/assets/img/acid.png"
+                src="/assets/img/acid.png"
                 alt="toxic"
               />
               <h2 class="container__accidents__title">accidents</h2>
@@ -239,7 +317,7 @@
           >
             <img
               class="accidents_image1"
-              src="public/assets/img/accidents2.png"
+              src="/assets/img/accident1.png"
               alt="accidentfoto"
             />
           </div>
@@ -249,11 +327,15 @@
           >
             <img
               class="accidents_image2"
-              src="public/assets/img/accidents1.png"
+              src="/assets/img/accident2.png"
               alt="accident"
             />
           </div>
 
+          <div class="container__flex-tears hidden__desktop">
+            <img src="/assets/img_mobile/paper_tear_mobile.png" alt="" />
+            <img src="/assets/img_mobile/paper_tear_mobile.png" alt="" />
+          </div>
           <div class="accidents__grid-four">
             <p class="container__accidents__text accidents__text-two">
               Sax faced many brushes with death. As a child, he once fell from
@@ -264,6 +346,37 @@
               >, mistaking it for milk, and later swallowed a pin.
             </p>
           </div>
+        </div>
+      </div>
+
+      <div class="container__saxophone wrapper">
+        <h1 class="container__saxophone__title hidden__mobile">
+          The Saxophone <span class="hidden__mobile"><br /></span>
+          <span class="saxophone__detail-subtitle">Details</span>
+        </h1>
+
+        <div class="container__saxophone-details">
+          <picture>
+            <source
+              media="(max-width: 390px)"
+              srcset="/assets/img_mobile/saxophone_uitleg_mobile.png"
+            />
+            <source
+              media="(max-width: 1440px)"
+              srcset="/assets/img/saxophone__uitleg.png"
+            />
+            <img
+              id="saxophone__detail"
+              src="/assets/img/saxophone__uitleg.png"
+              alt="saxophone"
+            />
+          </picture>
+
+          <p id="saxophone__detail-textone">Mouthpiece</p>
+          <p id="saxophone__detail-texttwo">Neck</p>
+          <p id="saxophone__detail-textthree">Keys</p>
+          <p id="saxophone__detail-textfour">Bell</p>
+          <p id="saxophone__detail-textfive">Body</p>
         </div>
       </div>
 
@@ -292,7 +405,7 @@
           </div>
 
           <div>
-            <p class="container__storyline__part1-text storyline__text_two">
+            <p class="container__storyline__part1-text storyline__text_two hidden__mobile">
               Before <span class="rocknroll">rock ’n’ roll</span> showed up and
               ponytailed girls danced to doo wop at sock hops.
             </p>
@@ -309,17 +422,17 @@
 
               <img
                 class="image1_triple"
-                src="public/assets/img/sax.png"
+                src="/assets/img/sax.png"
                 alt="saxophone"
               />
               <img
                 class="image2_triple"
-                src="public/assets/img/rock.png"
+                src="/assets/img/rock.png"
                 alt="rock1"
               />
               <img
-                class="image3_triple"
-                src="public/assets/img/charlieparker.png"
+                id="image3_triple"
+                src="/assets/img/charlieparker.png"
                 alt="charlie parker"
               />
             </div>
@@ -330,7 +443,7 @@
       <div class="container__storyline__part2 hidden__desktop">
         <img
           class="storyline__duosax"
-          src="public/assets/img_mobile/saxophone__duo__mobile.png"
+          src="/assets/img_mobile/saxophone__duo__mobile.png"
           alt="saxophoneduos"
         />
 
@@ -353,12 +466,12 @@
 
         <div class="storyline__images">
           <img
-            src="public/assets/img_mobile/rock_background_mobile.png"
+            src="/assets/img_mobile/rock_background_mobile.png"
             alt="rock"
           />
 
           <img
-            src="public/assets/img_mobile/charlieparke_mobile.png"
+            src="/assets/img_mobile/charlieparke_mobile.png"
             alt="charlieparker"
           />
         </div>
@@ -392,14 +505,14 @@
           <h2 class="container__adolphesax__titel cd__titleone">Plas</h2>
           <img
             class="container__cds-cd cds__one"
-            src="public/assets/img_mobile/pinkpanther1_mobile.png"
+            src="/assets/img_mobile/pinkpanther1_mobile.png"
             alt="plas johnson"
           />
 
           <h2 class="container__adolphesax__titel cd__titletwo">Johnson</h2>
           <img
             class="container__cds-cd cds__two"
-            src="public/assets/img_mobile/pinkpanther2_mobile.png"
+            src="/assets/img_mobile/pinkpanther2_mobile.png"
             alt="plas johnson"
           />
         </div>
@@ -409,13 +522,13 @@
         <div class="platehoezen__flex">
           <div class="container__cds hidden__mobile">
             <img
-              class="platehoes1"
-              src="public/assets/img/pink_panthersound1.png"
+              id="platehoes1"
+              src="/assets/img/pink_panthersound1.png"
               alt="plas johnson"
             />
             <img
-              class="platehoes2"
-              src="public/assets/img/pink_panthersound2.png"
+              id="platehoes2"
+              src="/assets/img/pink_panthersound2.png"
               alt="plas johnson"
             />
           </div>
@@ -441,13 +554,13 @@
 
       <div class="container__johnson__images hidden__mobile wrapper">
         <img
-          class="johnson__downfall"
-          src="public/assets/img/plasjohnson.png"
+          id="johnson__downfall"
+          src="/assets/img/plasjohnson.png"
           alt="plas johnson"
         />
         <img
           class="johnson__downfall__second"
-          src="public/assets/img/plas_johnsons2.png"
+          src="/assets/img/plas_johnsons2.png"
           alt=""
         />
 
@@ -461,22 +574,24 @@
       </div>
     </div>
     <!-- VERTICAL SCROLL START -->
-    <h4 class="container__title-downfall">The <br />Downfall</h4>
+    <h4 class="container__title-downfall">
+      The <span class="hidden__mobile"><br /></span>Downfall
+    </h4>
 
     <div class="container__downfall__jazzrock">
       <div class="container__downfall__jazzrock-partone container__flex">
-        <picture class="adolphesax">
+        <picture class="adolphesax-second">
           <source
             media="(max-width: 390px)"
-            srcset="public/assets/img_mobile/jazz_mobile.png"
+            srcset="/assets/img_mobile/jazz_mobile.png"
           />
           <source
             media="(max-width: 1440px)"
-            srcset="public/assets/img/sax__left_desktop.png"
+            srcset="/assets/img/sax__left_desktop.png"
           />
           <img
-            class="width__images"
-            src="public/assets/img/sax__left_desktop.png"
+            id="jazzplayer"
+            src="/assets/img/sax__left_desktop.png"
             alt="jazz speler"
           />
         </picture>
@@ -496,20 +611,20 @@
           <span class="span__color-orange"> a decline</span>”
         </p>
 
-        <picture>
+        <picture class="rock__second">
           <source
             class="rock__mobile"
             media="(max-width: 390px)"
-            srcset="public/assets/img_mobile/rock_mobile.png"
+            srcset="/assets/img_mobile/rock_mobile.png"
           />
           <source
             class="width__images__rock"
             media="(max-width: 1440px)"
-            srcset="public/assets/img/rockrol_desktop.png"
+            srcset="/assets/img/rockrol_desktop.png"
           />
           <img
-            class="width__images__rock"
-            src="public/assets/img/rockrol_desktop.png"
+            id="width__images__rock"
+            src="/assets/img/rockrol_desktop.png"
             alt="jazz speler"
           />
         </picture>
@@ -520,27 +635,27 @@
       <div class="container__quoteguitars-images container__flex">
         <img
           class="guitar__one"
-          src="public/assets/img/guitar__beige.png"
+          src="/assets/img/guitar__beige.png"
           alt="rock guitar"
         />
         <img
           class="guitar__two"
-          src="public/assets/img/guitar_orange.png"
+          src="/assets/img/guitar_orange.png"
           alt="rock guitar"
         />
         <img
           class="guitar__three"
-          src="public/assets/img/guitar__beige.png"
+          src="/assets/img/guitar__beige.png"
           alt="rock guitar"
         />
         <img
           class="guitar__four"
-          src="public/assets/img/guitar_orange.png"
+          src="/assets/img/guitar_orange.png"
           alt="rock guitar"
         />
         <img
           class="guitar__five"
-          src="public/assets/img/guitar_orange.png"
+          src="/assets/img/guitar_orange.png"
           alt="rock guitar"
         />
       </div>
@@ -555,27 +670,27 @@
       <div class="container__quoteguitars-imagessecond container__flex">
         <img
           class="guitar__six"
-          src="public/assets/img/guitar_orange.png"
+          src="/assets/img/guitar_orange.png"
           alt="rock guitar"
         />
         <img
           class="guitar__seven"
-          src="public/assets/img/guitar__beige.png"
+          src="/assets/img/guitar__beige.png"
           alt="rock guitar"
         />
         <img
           class="guitar__eight"
-          src="public/assets/img/guitar_orange.png"
+          src="/assets/img/guitar_orange.png"
           alt="rockguitar"
         />
         <img
           class="guitar__nine"
-          src="public/assets/img/guitar__beige.png"
+          src="/assets/img/guitar__beige.png"
           alt="rock guitar"
         />
         <img
           class="guitar__ten"
-          src="public/assets/img/guitar__beige.png"
+          src="/assets/img/guitar__beige.png"
           alt="rock guitar"
         />
       </div>
@@ -591,20 +706,20 @@
         <picture class="pinkfloyd__image-mobile">
           <source
             media="(max-width: 390px)"
-            srcset="public/assets/img_mobile/PINK-FLOYD_mobile.png"
+            srcset="/assets/img_mobile/PINK-FLOYD_mobile.png"
           />
           <source
             media="(max-width: 1440px)"
-            srcset="public/assets/img/PINK-FLOYD_desktop.png"
+            srcset="/assets/img/PINK-FLOYD_desktop.png"
           />
           <img
             class="pinkfloyd__image-desktop"
-            src="public/assets/img/PINK-FLOYD_desktop.png"
+            src="/assets/img/PINK-FLOYD_desktop.png"
             alt="pinkfloyd"
           />
         </picture>
 
-        <h4 class="container__pinkfloyd__backgroundimage-title">PINK FLOYD</h4>
+        <h4 id="container__pinkfloyd__backgroundimage-title">PINK FLOYD</h4>
       </div>
     </div>
 
@@ -613,22 +728,22 @@
         <picture>
           <source
             media="(max-width: 390px)"
-            srcset="public/assets/img_mobile/plattehoezen__background.png"
+            srcset="/assets/img_mobile/plattehoezen__background.png"
           />
           <source
             media="(max-width: 1440px)"
-            srcset="public/assets/img/background__platehoezen.png"
+            srcset="/assets/img/background__platehoezen.png"
           />
           <img
             class="plattehoezen__background"
-            src="public/assets/img/background__platehoezen.png"
+            src="/assets/img/background__platehoezen.png"
             alt="pinkfloyd"
           />
         </picture>
 
         <div class="container__platehoezen__texts">
           <p
-            class="container__platehoezen__text platehoezen__textone hidden__mobile"
+            class="container__platehoezen__text hidden__mobile" id="platehoezen__textone"
           >
             <span class="span__color-orange">That shift</span> toward electronic
             production and away from acoustic as exemplified by the fast rise of
@@ -637,7 +752,7 @@
           </p>
 
           <p
-            class="container__platehoezen__text platehoezen__texttwo hidden__desktop"
+            class="container__platehoezen__text hidden__desktop platehoezen__texttwo"
           >
             The saxophone thrived in jazz fusion with guys like
             <span class="span__color-orange"
@@ -654,7 +769,9 @@
             <span class="span__color-orange">sexy saxophone solo.</span>
           </p>
 
-          <p class="container__platehoezen__text platehoezen__texttwo">
+          <p
+            class="container__platehoezen__text  hidden__mobile" id="platehoezen__texttwo"
+          >
             The saxophone thrived in jazz fusion with guys like
             <span class="span__color-orange"
               >Grover Washington Jr., Tom Scott, David Sanborn,</span
@@ -672,12 +789,12 @@
       <div class="container__kennyg">
         <img
           class="kennyG_backgroundimage hidden__mobile"
-          src="public/assets/img/kennyG_desktop.png"
+          src="/assets/img/kennyG_desktop.png"
           alt="kenny G"
         />
 
         <div class="container__kennyg-all">
-          <h2 class="container__kennyg__title">Kenny G</h2>
+          <h2 id="container__kennyg__title">Kenny G</h2>
           <div class="container__kennyg__text">
             <span class="container__kenny-mobile">
               Of course, no one is more famous in the popular mind for<span
@@ -758,7 +875,7 @@
         </p>
         <img
           class="michael__desktop hidden__mobile"
-          src="public/assets/img/michael_jackson_desktop.png"
+          src="/assets/img/michael_jackson_desktop.png"
           alt="michael jackson"
         />
       </div>
@@ -769,15 +886,15 @@
         <picture>
           <source
             media="(max-width: 390px)"
-            srcset="public/assets/img_mobile/tear__mobile.png"
+            srcset="/assets/img_mobile/tear__mobile.png"
           />
           <source
             media="(max-width: 1440px)"
-            srcset="public/assets/img/pop__desktop.png"
+            srcset="/assets/img/pop__desktop.png"
           />
           <img
             class="image__pop"
-            src="public/assets/img/pop__desktop.png"
+            src="/assets/img/pop__desktop.png"
             alt=""
           />
         </picture>
@@ -807,7 +924,7 @@
       <div class="vieuwport__height4 wrappertwo">
         <div class="container__sounds hidden__mobile">
           <div class="container__songs__desktop container__flex">
-            <img src="public/assets/img/songs1.png" alt="rock image" />
+            <img id="rock" src="/assets/img/songs1.png" alt="rock image" />
             <p class="container__sounds__text">
               Big name ’80s pop stars started using the saxophone to create
               hooks that were <span class="span__color-orange">catchy</span>,
@@ -823,11 +940,12 @@
 
           <div class="container__songs__desktop-second container__flex">
             <img
-              class="saxplayer"
-              src="public/assets/img/song2.png"
+              id="saxplayer"
+              src="/assets/img/song2.png"
               alt="clarence clemmens"
             />
-            <img src="public/assets/img/song3.png" alt="rihanna" />
+            <img 
+            id="rihanna" src="/assets/img/song3.png" alt="rihanna" />
           </div>
         </div>
       </div>
@@ -835,7 +953,7 @@
       <div class="container__sounds hidden__desktop">
         <img
           class="container__sounds__image"
-          src="public/assets/img_mobile/background__song__mobile.png"
+          src="/assets/img_mobile/background__song__mobile.png"
           alt=""
         />
         <div class="container__sounds__rock">
@@ -871,8 +989,8 @@
       <div class="vieuwport__height5 alternativewrapper">
         <div class="background__tear__second">
           <img
-            class="tear__background"
-            src="public/assets/img/rihanna__background.png"
+            class="tear__background hidden__mobile"
+            src="/assets/img/rihanna__background.png"
             alt=""
           />
 
@@ -885,11 +1003,11 @@
                 <span class="span__color-orange">decade of the 2000s</span> that
                 the saxophone peeked back into the Top 400. There were a couple
                 of popular songs in the early aughts with big saxes, notably
-                <span class="span__color-orange"
+                <span class="span__color-orange" id="lopez"
                   >Jennifer Lopez’s “Get Right”</span
                 >
                 and
-                <span class="span__color-orange">Beyoncé’s “Work it Out.”</span>
+                <span class="span__color-orange" id="beyonce">Beyoncé’s “Work it Out.”</span>
               </p>
             </div>
           </div>
@@ -900,13 +1018,13 @@
         class="container__newsongs container__flex container__flex__mobile hidden__desktop"
       >
         <img
-          class="container__newsongss__image image__song__one"
-          src="public/assets/img_mobile/song1_mobile.png"
+          class="container__newsongss__image" id="image__song__one"
+          src="/assets/img_mobile/song1_mobile.png"
           alt="kennyg"
         />
 
         <div class="container__newsongss__texts">
-          <p class="container__newsongss__texts__text">
+          <p class="container__newsongss__texts__text ">
             But what seemed like a
             <span class="span__color-orange">major comeback</span> for the
             instrument didn’t come
@@ -936,8 +1054,8 @@
         </div>
 
         <img
-          class="container__newsongss__image image__song__two"
-          src="public/assets/img_mobile/song2_mobile.png"
+          class="container__newsongss__image hidden__mobile" id="image__song__two "
+          src="/assets/img_mobile/song2_mobile.png"
           alt="lady gaga"
         />
 
@@ -946,11 +1064,11 @@
             (Kenny G even made a cameo in the video for “T.G.I.F.”) By 2014, it
             seemed like the saxophone was maybe easing into another run as
             America’s most popular instrument. That year, it was used in
-            <span class="span__color-orange"
-              >Jason Derulo’s “Talk Dirty,” Macklemore & Ryan Lewis’s “Thrift
+            <span class="span__color-orange" id="jason"
+              >Jason Derulo’s “Talk Dirty,”</span> <span class="span__color-orange" id="mack" >Macklemore & Ryan Lewis’s “Thrift
               Shop,”</span
             >
-            and <span class="span__color-orange">Redfoo’s “New Thang.”</span>
+            and <span class="span__color-orange" id="redfoos">Redfoo’s “New Thang.”</span>
           </p>
 
           <div class="container__newsongs__socials hidden__mobile">
@@ -962,7 +1080,7 @@
         <div class="container__newsongss__texts__arianda">
           <img
             class="container__newsongss__image image__song__three"
-            src="public/assets/img_mobile/song3_mobile.png"
+            src="/assets/img_mobile/song3_mobile.png"
             alt="arianda grande"
           />
           <p class="container__newsongss__texts__text">
@@ -976,31 +1094,31 @@
         </div>
       </div>
 
-      <div class="container__newsongs wrappertwo">
+      <div class="container__newsongs wrappertwo hidden__mobile">
         <div class="container__newsongss__texts">
-          <p class="container__newsongss__texts__text-first">
+          <p class="container__newsongss__texts__text-first text1__end">
             But what seemed like a
             <span class="span__color-orange">major comeback</span> for the
             instrument didn’t come
           </p>
 
           <img
-            class="container__newsongss__image image__song__one"
-            src="public/assets/img/kennyg.png"
+            class="container__newsongss__image" id="image__song__one"
+            src="/assets/img/kennyg.png"
             alt="kennyg"
           />
 
-          <h2 class="container__newsongss__texts__title songs__title__mobile">
+          <h2 class="container__newsongss__texts__title  title1__end songs__title__mobile">
             until 2011
           </h2>
 
           <img
-            class="container__newsongss__image image__song__two"
-            src="public/assets/img/lady_gaga.png"
+            class="container__newsongss__image" id="image__song__two"
+            src="/assets/img/lady_gaga.png"
             alt="kennyg"
           />
 
-          <p class="container__newsongss__texts__text-second">
+          <p class="container__newsongss__texts__text-second text2__end">
             With the releases of Katy Perry’s
             <span class="span__color-orange"
               >“Last Friday Night (T.G.I.F.)”</span
@@ -1021,8 +1139,8 @@
       </div>
 
       <img
-        class="container__newsongss__image image__song__two hidden__desktop"
-        src="public/assets/img_mobile/song2_mobile.png"
+        class="container__newsongss__image hidden__desktop" id="image__song__two"
+        src="/assets/img_mobile/song2_mobile.png"
         alt="lady gaga"
       />
 
@@ -1040,14 +1158,14 @@
           </p>
 
           <img
-            class="image__song__four"
-            src="public/assets/img/ariandaa.png"
+            id="image__song__four"
+            src="/assets/img/ariandaa.png"
             alt="arianda grande"
           />
 
           <img
-            class="image__song__five"
-            src="public/assets/img/socials.png"
+            id="image__song__five"
+            src="/assets/img/socials.png"
             alt="arianda grande"
           />
           <p class="container__newsongss__texts__text text__Arianda">
@@ -1058,6 +1176,51 @@
             None of these songs had producers in common, or even saxophonists in
             common.
           </p>
+        </div>
+      </div>
+
+      <div class="wrappertwo">
+        <div class="podcasts__test ">
+        <p class="text__podvast hidden__mobile">You are not tired of the saxophone!
+          MIM is happy to see you still like good music!<br><br>
+          
+          Total songs listened: <span class="span__color-orange" id="counter">8</span><br>
+          Estimated play time: <span class="span__color-orange" id="playtime">40min</span><br><br>
+          
+          In the MIM museum you can listen to all kinds of instruments and music!<br> Be sure to spend your 40 min there!</p>
+        <div class="background__podcast">
+          <img class="hidden__mobile" src="/assets/img/podcast1.png" alt="podcast1">
+
+          <div class="center__podcast">
+            <a class="hidden__mobile" href="https://www.mim.be/nl/podcasts" class="podcast__invite">Or check out one of our podcasts here!</a>
+            <img class="hidden__mobile" src="/assets/img/podcast2.png" alt="podcast2">
+           </div>  
+          <img class="hidden__mobile" src="/assets/img/podcast3.png" alt="podcast3">
+        </div>
+
+        <div class="podcasts__test hidden__desktop">
+          <p class="text__podvast_mobile hidden__desktop">You are not tired of the saxophone!
+            <a href="https://www.mim.be/nl"><span class="span__color-orange">MIM </span></a>is happy to see you still like good music!<br><br>
+            
+            Total songs listened: <span class="span__color-orange" id="counter">8</span><br>
+            Estimated play time: <span class="span__color-orange" id="playtime">40min</span><br><br>
+            
+            In <a href="https://www.mim.be/nl"><span class="span__color-orange">the MIM museum</span></a> you can listen to all kinds of instruments and music!<br> Be sure to spend your 40 min there!</p>
+
+          
+            <a href="https://www.mim.be/nl/podcasts"><img class="podcast__mobile hidden__desktop" src="/assets/img/podcast3.png" alt=""></a>
+          <picture>
+              <source
+           media="(max-width: 390px)"
+           srcset="/assets/img/podcast__mobile.png"
+           />
+            <source
+              media="(max-width: 1440px)"
+              srcset="/assets/img/podcast.png"
+            />  
+
+            <img class="background__podcast-test" src="/assets/img/podcast.png" alt="">
+            </picture>
         </div>
       </div>
     </div>
