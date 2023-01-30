@@ -642,6 +642,41 @@ p {
     height: 100vh;
   }
 
+  h1 {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.5rem;
+    text-align: right;
+    line-height: 3rem;
+
+    color: #f1dec4;
+  }
+
+  h2 {
+    font-family: "Jonze & Jonzing";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7rem;
+    line-height: 164px;
+    text-align: center;
+    /* identical to box height, or 109% */
+
+    color: #e74c14;
+  }
+
+  p {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+
+    color: white;
+    text-align: center;
+  }
+
   .hidden__desktop {
     display: none;
   }
@@ -1065,7 +1100,7 @@ p {
 
   .image3_triple {
     position: absolute;
-    margin: -9.2rem 0rem 0rem 52rem;
+    margin: -9.2rem 0rem 0rem 85rem;
   }
 
   .container__storyline__part1 {
